@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - PV Consulting d.o.o.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <!-- Navigation will be added later -->
+    </header>
+
+    <main>
+        <div class="min-h-screen bg-gray-50">
+            <!-- Hero Section -->
+            <div class="bg-gradient-to-br from-green-50 to-emerald-50 py-12 sm:py-16">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
+                        Kontaktirajte nas
+                    </h1>
+                    <p class="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
+                        Spremni smo odgovoriti na sva vaša pitanja i pomoći vam s vašim projektima.
+                        Kontaktirajte nas za besplatnu konzultaciju.
+                    </p>
+                </div>
+            </div>
+
+            <div class="py-12 sm:py-16">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
+                        <!-- Contact Information -->
+                        <div class="space-y-6 lg:space-y-8">
+                            <div>
+                                <h2 class="text-xl sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6">Informacije o kontaktu</h2>
+                                <div class="space-y-4 sm:space-y-6">
+                                    <div class="card">
+                                        <div class="p-4 sm:p-6">
+                                            <div class="flex items-start space-x-4">
+                                                <div class="w-10 h-10 sm:w-12 sm:h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                                    <!-- Phone icon -->
+                                                </div>
+                                                <div>
+                                                    <h3 class="font-semibold text-gray-900 mb-1">Telefon</h3>
+                                                    <p class="text-gray-600 text-sm sm:text-base">+385 44 123 456</p>
+                                                    <p class="text-xs sm:text-sm text-gray-500 mt-1">Pon - Pet: 08:00 - 17:00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="p-4 sm:p-6">
+                                            <div class="flex items-start space-x-4">
+                                                <div class="w-10 h-10 sm:w-12 sm:h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                                    <!-- Mail icon -->
+                                                </div>
+                                                <div>
+                                                    <h3 class="font-semibold text-gray-900 mb-1">Email</h3>
+                                                    <p class="text-gray-600 text-sm sm:text-base">info@pvconsulting.hr</p>
+                                                    <p class="text-xs sm:text-sm text-gray-500 mt-1">Odgovor u roku od 24h</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="p-4 sm:p-6">
+                                            <div class="flex items-start space-x-4">
+                                                <div class="w-10 h-10 sm:w-12 sm:h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                                    <!-- MapPin icon -->
+                                                </div>
+                                                <div>
+                                                    <h3 class="font-semibold text-gray-900 mb-1">Adresa</h3>
+                                                    <p class="text-gray-600 text-sm sm:text-base">Ulica Hrvatske bratske zajednice 1, 44000 Sisak</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="p-4 sm:p-6">
+                                            <div class="flex items-start space-x-4">
+                                                <div class="w-10 h-10 sm:w-12 sm:h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                                    <!-- Clock icon -->
+                                                </div>
+                                                <div>
+                                                    <h3 class="font-semibold text-gray-900 mb-1">Radno vrijeme</h3>
+                                                    <div class="text-gray-600 space-y-1 text-sm sm:text-base">
+                                                        <p>Ponedjeljak - Petak: 08:00 - 17:00</p>
+                                                        <p>Subota: 09:00 - 13:00</p>
+                                                        <p class="text-xs sm:text-sm text-gray-500">Nedjelja: Zatvoreno</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Form -->
+                        <div class="lg:col-span-2">
+                            <div class="card shadow-lg">
+                                <div class="p-4 sm:p-6">
+                                    <h2 class="text-xl sm:text-2xl flex items-center space-x-2 font-bold text-gray-900 mb-2">
+                                        <!-- MessageSquare icon -->
+                                        <span>Pošaljite nam poruku</span>
+                                    </h2>
+                                    <p class="text-gray-600 mb-6">
+                                        Ispunite formu ispod i kontaktirati ćemo vas u najkraćem mogućem roku
+                                    </p>
+                                    <form id="contact-form" class="space-y-4 sm:space-y-6">
+                                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+                                            <div>
+                                                <label for="name" class="block text-sm font-medium text-gray-700">Ime i prezime *</label>
+                                                <input type="text" id="name" name="name" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                                            </div>
+                                            <div>
+                                                <label for="email" class="block text-sm font-medium text-gray-700">Email adresa *</label>
+                                                <input type="email" id="email" name="email" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                                            </div>
+                                        </div>
+
+                                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+                                            <div>
+                                                <label for="phone" class="block text-sm font-medium text-gray-700">Broj telefona</label>
+                                                <input type="text" id="phone" name="phone" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                                            </div>
+                                            <div>
+                                                <label for="service" class="block text-sm font-medium text-gray-700">Usluga od interesa</label>
+                                                <select id="service" name="service" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                                                    <option value="gradevinski-injenjering">Građevinski inženjering</option>
+                                                    <option value="usluge-projektiranja">Usluge projektiranja</option>
+                                                    <option value="javna-nabava-ponuditelji">Javna nabava za Ponuditelje</option>
+                                                    <option value="javna-nabava-narucitelji">Javna nabava za Naručitelje</option>
+                                                    <option value="zastita-na-radu">Zaštita na radu</option>
+                                                    <option value="knjigovodstvene-usluge">Knjigovodstvene usluge</option>
+                                                    <option value="upravljanje-zgrada">Upravljanje zgrada</option>
+                                                    <option value="ostale-djelatnosti">Ostale djelatnosti</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <label for="subject" class="block text-sm font-medium text-gray-700">Predmet *</label>
+                                            <input type="text" id="subject" name="subject" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                                        </div>
+
+                                        <div>
+                                            <label for="message" class="block text-sm font-medium text-gray-700">Poruka *</label>
+                                            <textarea id="message" name="message" rows="6" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"></textarea>
+                                        </div>
+
+                                        <button type="submit" class="btn btn-lg primary w-full">
+                                            <!-- Send icon -->
+                                            Pošaljite poruku
+                                        </button>
+
+                                        <p class="text-xs sm:text-sm text-gray-500 text-center">
+                                            Slanjem forme prihvaćate našu
+                                            <a href="privacy-policy.html" class="text-green-600 hover:underline">
+                                                politiku privatnosti
+                                            </a>
+                                        </p>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Map Section -->
+            <div class="bg-white py-12 sm:py-16">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-6 sm:mb-8">
+                        <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">Naša lokacija</h2>
+                        <p class="text-lg sm:text-xl text-gray-600">Posjetite nas u srcu Siska</p>
+                    </div>
+                    <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg">
+                        <div class="bg-gray-200 flex items-center justify-center h-64 sm:h-96">
+                            <div class="text-center text-gray-500">
+                                <!-- MapPin icon -->
+                                <p class="font-medium">Google Maps</p>
+                                <p class="text-sm">Ulica Hrvatske bratske zajednice 1, 44000 Sisak</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Footer will be added later -->
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
