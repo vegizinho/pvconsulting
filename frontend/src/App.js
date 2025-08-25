@@ -22,17 +22,10 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               
-              {/* Service routes */}
-              <Route path="/gradevinski-injenjering" element={<ServiceDetail />} />
-              <Route path="/usluge-projektiranja" element={<ServiceDetail />} />
-              <Route path="/javna-nabava-ponuditelji" element={<ServiceDetail />} />
-              <Route path="/javna-nabava-narucitelji" element={<ServiceDetail />} />
-              <Route path="/zastita-na-radu" element={<ServiceDetail />} />
-              <Route path="/knjigovodstvene-usluge" element={<ServiceDetail />} />
-              <Route path="/upravljanje-zgrada" element={<ServiceDetail />} />
-              <Route path="/ostale-djelatnosti" element={<ServiceDetail />} />
+              {/* Service routes - using single dynamic route */}
+              <Route path="/:serviceId" element={<ServiceDetail />} />
               
-              {/* Other pages */}
+              {/* Other pages - these should come before the dynamic route */}
               <Route path="/posebne-ponude" element={<SpecialOffers />} />
               <Route path="/kontakt" element={<Contact />} />
               <Route path="/politika-privatnosti" element={<PrivacyPolicy />} />
