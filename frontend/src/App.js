@@ -22,14 +22,14 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               
-              {/* Service routes - using single dynamic route */}
-              <Route path="/:serviceId" element={<ServiceDetail />} />
-              
-              {/* Other pages - these should come before the dynamic route */}
+              {/* Fixed pages first */}
               <Route path="/posebne-ponude" element={<SpecialOffers />} />
               <Route path="/kontakt" element={<Contact />} />
               <Route path="/politika-privatnosti" element={<PrivacyPolicy />} />
               <Route path="/uvjeti-koristenja" element={<TermsOfService />} />
+              
+              {/* Dynamic service route last */}
+              <Route path="/:serviceId" element={<ServiceDetail />} />
             </Routes>
           </main>
           <Footer />
