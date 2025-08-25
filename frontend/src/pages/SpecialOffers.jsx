@@ -48,18 +48,18 @@ const SpecialOffers = () => {
 
       <div className="min-h-screen bg-gray-50">
         {/* Hero Section */}
-        <div className="bg-gradient-to-br from-blue-50 to-indigo-50 py-16">
+        <div className="bg-gradient-to-br from-green-50 to-emerald-50 py-12 sm:py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div className="flex items-center justify-center space-x-2 mb-6">
-              <Gift className="w-10 h-10 text-blue-600" />
-              <Badge variant="secondary" className="bg-blue-100 text-blue-700 text-lg px-4 py-2">
+            <div className="flex items-center justify-center space-x-2 mb-4 sm:mb-6">
+              <Gift className="w-8 h-8 sm:w-10 sm:h-10 text-green-600" />
+              <Badge variant="secondary" className="bg-green-100 text-green-700 text-base sm:text-lg px-3 sm:px-4 py-2">
                 Posebne ponude
               </Badge>
             </div>
-            <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
               Naši paketi usluga
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
               Odabrali smo najbolje kombinacije naših usluga kako bismo vam pružili 
               maksimalnu vrijednost po najpovoljnijim cijenama.
             </p>
@@ -67,82 +67,82 @@ const SpecialOffers = () => {
         </div>
 
         {/* Benefits Section */}
-        <div className="py-16 bg-white">
+        <div className="py-12 sm:py-16 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            <div className="text-center mb-8 sm:mb-12">
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
                 Zašto odabrati naše pakete?
               </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
                 Svaki paket je pažljivo dizajniran za specifične potrebe i omogućava značajne uštede
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
               <div className="text-center">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Star className="w-8 h-8 text-blue-600" />
+                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Star className="w-6 h-6 sm:w-8 sm:h-8 text-green-600" />
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">Višestruke uštede</h3>
-                <p className="text-gray-600">Do 30% uštede u odnosu na pojedinačne usluge</p>
+                <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-2">Višestruke uštede</h3>
+                <p className="text-gray-600 text-sm sm:text-base">Do 30% uštede u odnosu na pojedinačne usluge</p>
               </div>
               <div className="text-center">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Clock className="w-8 h-8 text-blue-600" />
+                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Clock className="w-6 h-6 sm:w-8 sm:h-8 text-green-600" />
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">Brža realizacija</h3>
-                <p className="text-gray-600">Koordinirane usluge za bržu završetak projekta</p>
+                <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-2">Brža realizacija</h3>
+                <p className="text-gray-600 text-sm sm:text-base">Koordinirane usluge za bržu završetak projekta</p>
               </div>
               <div className="text-center">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Users className="w-8 h-8 text-blue-600" />
+                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Users className="w-6 h-6 sm:w-8 sm:h-8 text-green-600" />
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">Jednozatni pristup</h3>
-                <p className="text-gray-600">Jedan kontakt za sve vaše potrebe</p>
+                <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-2">Jednozatni pristup</h3>
+                <p className="text-gray-600 text-sm sm:text-base">Jedan kontakt za sve vaše potrebe</p>
               </div>
               <div className="text-center">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Shield className="w-8 h-8 text-blue-600" />
+                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Shield className="w-6 h-6 sm:w-8 sm:h-8 text-green-600" />
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">Garancija kvalitete</h3>
-                <p className="text-gray-600">Potpuna garancija na sve usluge u paketu</p>
+                <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-2">Garancija kvalitete</h3>
+                <p className="text-gray-600 text-sm sm:text-base">Potpuna garancija na sve usluge u paketu</p>
               </div>
             </div>
           </div>
         </div>
 
         {/* Offers Section */}
-        <div className="py-16">
+        <div className="py-12 sm:py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
               {specialOffers.map((offer, index) => (
                 <Card key={offer.id} className={`relative overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 ${
-                  index === 1 ? 'border-2 border-blue-500 transform scale-105' : ''
+                  index === 1 ? 'border-2 border-green-500 transform scale-105' : ''
                 }`}>
                   {index === 1 && (
-                    <div className="absolute top-0 left-0 right-0 bg-blue-500 text-white text-center py-2 text-sm font-medium">
+                    <div className="absolute top-0 left-0 right-0 bg-green-500 text-white text-center py-2 text-sm font-medium">
                       NAJPOPULARNIJI
                     </div>
                   )}
-                  <CardHeader className="bg-gradient-to-br from-blue-600 to-blue-700 text-white pb-8 pt-8">
+                  <CardHeader className="bg-gradient-to-br from-green-600 to-green-700 text-white pb-6 sm:pb-8 pt-6 sm:pt-8">
                     {index === 1 && <div className="h-6"></div>}
                     <div className="flex items-center justify-between mb-4">
-                      <CardTitle className="text-2xl font-bold">{offer.title}</CardTitle>
-                      {index === 0 && <Badge className="bg-green-500">NOVO</Badge>}
-                      {index === 1 && <Star className="w-6 h-6 fill-current" />}
-                      {index === 2 && <Badge className="bg-orange-500">VIP</Badge>}
+                      <CardTitle className="text-xl sm:text-2xl font-bold">{offer.title}</CardTitle>
+                      {index === 0 && <Badge className="bg-green-500 text-xs sm:text-sm">NOVO</Badge>}
+                      {index === 1 && <Star className="w-5 h-5 sm:w-6 sm:h-6 fill-current" />}
+                      {index === 2 && <Badge className="bg-orange-500 text-xs sm:text-sm">VIP</Badge>}
                     </div>
-                    <CardDescription className="text-blue-100 text-lg">
+                    <CardDescription className="text-green-100 text-base sm:text-lg">
                       {offer.description}
                     </CardDescription>
-                    <div className="text-2xl font-bold mt-4">{offer.price}</div>
+                    <div className="text-xl sm:text-2xl font-bold mt-4">{offer.price}</div>
                   </CardHeader>
-                  <CardContent className="p-8">
-                    <ul className="space-y-4 mb-8">
+                  <CardContent className="p-6 sm:p-8">
+                    <ul className="space-y-3 sm:space-y-4 mb-6 sm:mb-8">
                       {offer.features.map((feature, featureIndex) => (
                         <li key={featureIndex} className="flex items-start space-x-3">
                           <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
-                          <span className="text-gray-700">{feature}</span>
+                          <span className="text-gray-700 text-sm sm:text-base">{feature}</span>
                         </li>
                       ))}
                     </ul>
@@ -151,7 +151,7 @@ const SpecialOffers = () => {
                       <Link to="/kontakt" className="block">
                         <Button className={`w-full ${
                           index === 1 
-                            ? 'bg-blue-600 hover:bg-blue-700' 
+                            ? 'bg-green-600 hover:bg-green-700' 
                             : 'bg-gray-800 hover:bg-gray-900'
                         }`}>
                           Zatražite ponudu
@@ -166,11 +166,11 @@ const SpecialOffers = () => {
                       </Button>
                     </div>
 
-                    <div className="mt-6 pt-6 border-t text-center">
-                      <p className="text-sm text-gray-500 mb-2">Besplatna konzultacija uključena</p>
+                    <div className="mt-4 sm:mt-6 pt-4 sm:pt-6 border-t text-center">
+                      <p className="text-xs sm:text-sm text-gray-500 mb-2">Besplatna konzultacija uključena</p>
                       <div className="flex items-center justify-center space-x-1 text-yellow-500">
                         {[...Array(5)].map((_, i) => (
-                          <Star key={i} className="w-4 h-4 fill-current" />
+                          <Star key={i} className="w-3 h-3 sm:w-4 sm:h-4 fill-current" />
                         ))}
                       </div>
                     </div>
@@ -182,21 +182,21 @@ const SpecialOffers = () => {
         </div>
 
         {/* FAQ Section */}
-        <div className="py-16 bg-white">
+        <div className="py-12 sm:py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            <div className="text-center mb-8 sm:mb-12">
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
                 Često postavljana pitanja
               </h2>
             </div>
 
-            <div className="space-y-6">
+            <div className="space-y-4 sm:space-y-6">
               <Card>
-                <CardContent className="p-6">
-                  <h3 className="font-semibold text-lg text-gray-900 mb-2">
+                <CardContent className="p-4 sm:p-6">
+                  <h3 className="font-semibold text-base sm:text-lg text-gray-900 mb-2">
                     Mogu li kombinirati usluge iz različitih paketa?
                   </h3>
-                  <p className="text-gray-600">
+                  <p className="text-gray-600 text-sm sm:text-base">
                     Da, možete prilagoditi paket prema vašim specifičnim potrebama. Kontaktirajte nas 
                     za personaliziranu ponudu koja najbolje odgovara vašem projektu.
                   </p>
@@ -204,11 +204,11 @@ const SpecialOffers = () => {
               </Card>
 
               <Card>
-                <CardContent className="p-6">
-                  <h3 className="font-semibold text-lg text-gray-900 mb-2">
+                <CardContent className="p-4 sm:p-6">
+                  <h3 className="font-semibold text-base sm:text-lg text-gray-900 mb-2">
                     Koliko traje realizacija paketa?
                   </h3>
-                  <p className="text-gray-600">
+                  <p className="text-gray-600 text-sm sm:text-base">
                     Vremenske okvire ovise o složenosti projekta, ali paketi omogućavaju do 40% kraće 
                     vrijeme realizacije zbog koordinirane provedbe usluga.
                   </p>
@@ -216,11 +216,11 @@ const SpecialOffers = () => {
               </Card>
 
               <Card>
-                <CardContent className="p-6">
-                  <h3 className="font-semibold text-lg text-gray-900 mb-2">
+                <CardContent className="p-4 sm:p-6">
+                  <h3 className="font-semibold text-base sm:text-lg text-gray-900 mb-2">
                     Postoje li dodatni troškovi?
                   </h3>
-                  <p className="text-gray-600">
+                  <p className="text-gray-600 text-sm sm:text-base">
                     Ne, sve navedene usluge su uključene u cijenu paketa. Jedini dodatni troškovi mogu 
                     biti službene naknade i dozvole koje se plaćaju institucijama.
                   </p>
@@ -231,21 +231,21 @@ const SpecialOffers = () => {
         </div>
 
         {/* CTA Section */}
-        <div className="bg-gradient-to-br from-blue-600 to-blue-800 py-16">
+        <div className="bg-gradient-to-br from-green-600 to-green-800 py-12 sm:py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl font-bold text-white mb-4">
+            <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
               Spremni za početak?
             </h2>
-            <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+            <p className="text-lg sm:text-xl text-green-100 mb-6 sm:mb-8 max-w-2xl mx-auto">
               Kontaktirajte nas danas i saznajte koji paket najbolje odgovara vašim potrebama
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <Link to="/kontakt">
-                <Button size="lg" variant="secondary" className="bg-white text-blue-600 hover:bg-gray-100">
+                <Button size="lg" variant="secondary" className="bg-white text-green-600 hover:bg-gray-100 w-full sm:w-auto">
                   Zatražite besplatnu konzultaciju
                 </Button>
               </Link>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600" asChild>
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-green-600 w-full sm:w-auto" asChild>
                 <a href="mailto:info@pvconsulting.hr">
                   <Mail className="w-4 h-4 mr-2" />
                   Pošaljite email
