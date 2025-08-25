@@ -26,6 +26,8 @@ app = FastAPI()
 api_router = APIRouter(prefix="/api")
 
 
+import resend
+
 # Define Models
 class StatusCheck(BaseModel):
     id: str = Field(default_factory=lambda: str(uuid.uuid4()))
@@ -34,6 +36,14 @@ class StatusCheck(BaseModel):
 
 class StatusCheckCreate(BaseModel):
     client_name: str
+
+class ContactForm(BaseModel):
+    name: str
+    email: str
+    phone: str
+    subject: str
+    service: str
+    message: str
 
 # Add your routes to the router instead of directly to app
 @api_router.get("/")
@@ -51,6 +61,28 @@ async def create_status_check(input: StatusCheckCreate):
 async def get_status_checks():
     status_checks = await db.status_checks.find().to_list(1000)
     return [StatusCheck(**status_check) for status_check in status_checks]
+
+@api_router.post("/contact")
+async def contact(form: ContactForm):
+    resend.api_key = os.environ['RESEND_API_KEY']
+
+    html = f"""
+        <p>Name: {form.name}</p>
+        <p>Email: {form.email}</p>
+        <p>Phone: {form.phone}</p>
+        <p>Service: {form.service}</p>
+        <p>Message: {form.message}</p>
+    """
+
+    params = {
+        "from": os.environ['FROM_EMAIL_ADDRESS'],
+        "to": os.environ['TO_EMAIL_ADDRESS'],
+        "subject": form.subject,
+        "html": html,
+    }
+
+    email = resend.Emails.send(params)
+    return email
 
 # Include the router in the main app
 app.include_router(api_router)

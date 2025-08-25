@@ -37,23 +37,44 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Mock form submission
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    try {
+      const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/contact`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
 
-    toast({
-      title: "Poruka uspješno poslana!",
-      description: "Kontaktirati ćemo vas u najkraćem mogućem roku.",
-    });
-
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      subject: '',
-      service: '',
-      message: ''
-    });
-    setIsSubmitting(false);
+      if (response.ok) {
+        toast({
+          title: "Poruka uspješno poslana!",
+          description: "Kontaktirati ćemo vas u najkraćem mogućem roku.",
+        });
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          subject: '',
+          service: '',
+          message: ''
+        });
+      } else {
+        toast({
+          title: "Greška!",
+          description: "Došlo je do pogreške prilikom slanja poruke.",
+          variant: "destructive",
+        });
+      }
+    } catch (error) {
+      toast({
+        title: "Greška!",
+        description: "Došlo je do pogreške prilikom slanja poruke.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const contactJsonLd = {
