@@ -33,16 +33,7 @@ const iconMap = {
 
 const ServiceDetail = () => {
   const { serviceId } = useParams();
-  const service = services.find(s => s.id === serviceId || 
-    (serviceId === 'gradevinski-injenjering' && s.id === 'gradevinski-injenjering') ||
-    (serviceId === 'usluge-projektiranja' && s.id === 'usluge-projektiranja') ||
-    (serviceId === 'javna-nabava-ponuditelji' && s.id === 'javna-nabava-ponuditelji') ||
-    (serviceId === 'javna-nabava-narucitelji' && s.id === 'javna-nabava-narucitelji') ||
-    (serviceId === 'zastita-na-radu' && s.id === 'zastita-na-radu') ||
-    (serviceId === 'knjigovodstvene-usluge' && s.id === 'knjigovodstvene-usluge') ||
-    (serviceId === 'upravljanje-zgrada' && s.id === 'upravljanje-zgrada') ||
-    (serviceId === 'ostale-djelatnosti' && s.id === 'ostale-djelatnosti')
-  );
+  const service = services.find(s => s.id === serviceId);
 
   if (!service) {
     return (
