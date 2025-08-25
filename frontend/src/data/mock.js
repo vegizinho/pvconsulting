@@ -151,12 +151,12 @@ export const specialOffers = [
 export const navigationItems = [
   { name: "Početna", href: "/" },
   { name: "Građevinski inženjering", href: "/gradevinski-injenjering" },
-  { name: "Usluge projektiranja", href: "/usluge-projektiranja" },
-  { name: "Javna nabava za Ponuditelje", href: "/javna-nabava-ponuditelji" },
-  { name: "Javna nabava za Naručitelje", href: "/javna-nabava-narucitelji" },
+  { name: "Projektiranje", href: "/usluge-projektiranja" },
+  { name: "JN Ponuditelji", href: "/javna-nabava-ponuditelji" },
+  { name: "JN Naručitelji", href: "/javna-nabava-narucitelji" },
   { name: "Zaštita na radu", href: "/zastita-na-radu" },
-  { name: "Knjigovodstvene usluge", href: "/knjigovodstvene-usluge" },
-  { name: "Upravljanje zgrada", href: "/upravljanje-zgrada" },
+  { name: "Knjigovodstvo", href: "/knjigovodstvene-usluge" },
+  { name: "Zgrade", href: "/upravljanje-zgrada" },
   { name: "Ostale djelatnosti", href: "/ostale-djelatnosti" },
   { name: "Posebne ponude", href: "/posebne-ponude" },
   { name: "Kontakt", href: "/kontakt" }
