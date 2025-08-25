@@ -229,7 +229,7 @@ const TermsOfService = () => {
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center space-x-2">
-                    <Phone className="w-5 h-5 text-blue-600" />
+                    <Phone className="w-5 h-5 text-green-600" />
                     <span>Kontakt informacije</span>
                   </CardTitle>
                 </CardHeader>
