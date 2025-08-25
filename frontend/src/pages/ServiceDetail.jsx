@@ -77,9 +77,9 @@ const ServiceDetail = () => {
       <div className="min-h-screen bg-gray-50">
         {/* Breadcrumb */}
         <div className="bg-white border-b">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 sm:py-4">
             <div className="flex items-center space-x-2 text-sm text-gray-600">
-              <Link to="/" className="hover:text-blue-600">Početna</Link>
+              <Link to="/" className="hover:text-green-600">Početna</Link>
               <span>/</span>
               <span className="text-gray-900 font-medium">{service.title}</span>
             </div>
@@ -87,39 +87,39 @@ const ServiceDetail = () => {
         </div>
 
         {/* Hero Section */}
-        <div className="bg-gradient-to-br from-blue-50 to-indigo-50 py-16">
+        <div className="bg-gradient-to-br from-green-50 to-emerald-50 py-12 sm:py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
               <div>
                 <Link to="/">
-                  <Button variant="ghost" size="sm" className="mb-6 text-blue-600 hover:text-blue-700">
+                  <Button variant="ghost" size="sm" className="mb-4 sm:mb-6 text-green-600 hover:text-green-700">
                     <ArrowLeft className="w-4 h-4 mr-2" />
                     Natrag na početnu
                   </Button>
                 </Link>
-                <div className="flex items-center space-x-3 mb-6">
-                  <div className="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center">
-                    <Icon className="w-8 h-8 text-blue-600" />
+                <div className="flex items-center space-x-3 mb-4 sm:mb-6">
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 bg-green-100 rounded-xl flex items-center justify-center">
+                    <Icon className="w-6 h-6 sm:w-8 sm:h-8 text-green-600" />
                   </div>
                   <div>
-                    <h1 className="text-3xl lg:text-4xl font-bold text-gray-900">
+                    <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900">
                       {service.title}
                     </h1>
-                    <Badge variant="secondary" className="mt-2 bg-blue-100 text-blue-700">
+                    <Badge variant="secondary" className="mt-2 bg-green-100 text-green-700">
                       Profesionalna usluga
                     </Badge>
                   </div>
                 </div>
-                <p className="text-xl text-gray-600 mb-8">
+                <p className="text-lg sm:text-xl text-gray-600 mb-6 sm:mb-8">
                   {service.description}
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4">
+                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                   <Link to="/kontakt">
-                    <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
+                    <Button size="lg" className="bg-green-600 hover:bg-green-700 w-full sm:w-auto">
                       Zatražite ponudu
                     </Button>
                   </Link>
-                  <Button size="lg" variant="outline">
+                  <Button size="lg" variant="outline" className="w-full sm:w-auto">
                     <Phone className="w-4 h-4 mr-2" />
                     +385 44 123 456
                   </Button>
@@ -135,7 +135,7 @@ const ServiceDetail = () => {
                       {service.features.map((feature, index) => (
                         <li key={index} className="flex items-center space-x-3">
                           <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
-                          <span className="text-gray-700">{feature}</span>
+                          <span className="text-gray-700 text-sm sm:text-base">{feature}</span>
                         </li>
                       ))}
                     </ul>
@@ -147,38 +147,38 @@ const ServiceDetail = () => {
         </div>
 
         {/* Detailed Information */}
-        <div className="py-16">
+        <div className="py-12 sm:py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
               {/* Main Content */}
-              <div className="lg:col-span-2 space-y-8">
+              <div className="lg:col-span-2 space-y-6 sm:space-y-8">
                 <Card>
                   <CardHeader>
                     <CardTitle>Detaljne informacije</CardTitle>
                   </CardHeader>
                   <CardContent className="prose prose-gray max-w-none">
-                    <p className="text-gray-600 leading-relaxed">
+                    <p className="text-gray-600 leading-relaxed text-sm sm:text-base">
                       Naša usluga {service.title.toLowerCase()} dizajnirana je za zadovoljavanje specifičnih potreba
                       vaših projekata. S godinama iskustva i stručnim pristupom, pružamo kvalitetne rješenja koja
                       će vam pomoći postići vaše ciljeve.
                     </p>
-                    <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3">Zašto odabrati nas?</h3>
+                    <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mt-6 mb-3">Zašto odabrati nas?</h3>
                     <ul className="space-y-2">
                       <li className="flex items-start space-x-2">
                         <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
-                        <span>Iskusni stručnjaci s licencama</span>
+                        <span className="text-sm sm:text-base">Iskusni stručnjaci s licencama</span>
                       </li>
                       <li className="flex items-start space-x-2">
                         <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
-                        <span>Brža realizacija projekata</span>
+                        <span className="text-sm sm:text-base">Brža realizacija projekata</span>
                       </li>
                       <li className="flex items-start space-x-2">
                         <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
-                        <span>Konkurentne cijene</span>
+                        <span className="text-sm sm:text-base">Konkurentne cijene</span>
                       </li>
                       <li className="flex items-start space-x-2">
                         <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
-                        <span>Potpuna podrška tijekom cijelog procesa</span>
+                        <span className="text-sm sm:text-base">Potpuna podrška tijekom cijelog procesa</span>
                       </li>
                     </ul>
                   </CardContent>
@@ -189,27 +189,27 @@ const ServiceDetail = () => {
                     <CardTitle>Proces rada</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
                       <div className="text-center">
-                        <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                          <span className="text-blue-600 font-bold text-lg">1</span>
+                        <div className="w-10 h-10 sm:w-12 sm:h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                          <span className="text-green-600 font-bold text-base sm:text-lg">1</span>
                         </div>
-                        <h4 className="font-semibold text-gray-900 mb-2">Konzultacija</h4>
-                        <p className="text-sm text-gray-600">Analiza vaših potreba i definiranje opsega rada</p>
+                        <h4 className="font-semibold text-gray-900 mb-2 text-sm sm:text-base">Konzultacija</h4>
+                        <p className="text-xs sm:text-sm text-gray-600">Analiza vaših potreba i definiranje opsega rada</p>
                       </div>
                       <div className="text-center">
-                        <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                          <span className="text-blue-600 font-bold text-lg">2</span>
+                        <div className="w-10 h-10 sm:w-12 sm:h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                          <span className="text-green-600 font-bold text-base sm:text-lg">2</span>
                         </div>
-                        <h4 className="font-semibold text-gray-900 mb-2">Realizacija</h4>
-                        <p className="text-sm text-gray-600">Profesionalno izvršavanje usluge prema dogovorenom planu</p>
+                        <h4 className="font-semibold text-gray-900 mb-2 text-sm sm:text-base">Realizacija</h4>
+                        <p className="text-xs sm:text-sm text-gray-600">Profesionalno izvršavanje usluge prema dogovorenom planu</p>
                       </div>
                       <div className="text-center">
-                        <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                          <span className="text-blue-600 font-bold text-lg">3</span>
+                        <div className="w-10 h-10 sm:w-12 sm:h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                          <span className="text-green-600 font-bold text-base sm:text-lg">3</span>
                         </div>
-                        <h4 className="font-semibold text-gray-900 mb-2">Podrška</h4>
-                        <p className="text-sm text-gray-600">Kontinuirana podrška i pomoć nakon završetka</p>
+                        <h4 className="font-semibold text-gray-900 mb-2 text-sm sm:text-base">Podrška</h4>
+                        <p className="text-xs sm:text-sm text-gray-600">Kontinuirana podrška i pomoć nakon završetka</p>
                       </div>
                     </div>
                   </CardContent>
@@ -224,21 +224,21 @@ const ServiceDetail = () => {
                   </CardHeader>
                   <CardContent className="space-y-4">
                     <div className="flex items-center space-x-3">
-                      <Phone className="w-5 h-5 text-blue-600" />
+                      <Phone className="w-5 h-5 text-green-600" />
                       <div>
-                        <div className="font-medium">Telefon</div>
-                        <div className="text-sm text-gray-600">+385 44 123 456</div>
+                        <div className="font-medium text-sm sm:text-base">Telefon</div>
+                        <div className="text-xs sm:text-sm text-gray-600">+385 44 123 456</div>
                       </div>
                     </div>
                     <div className="flex items-center space-x-3">
-                      <Mail className="w-5 h-5 text-blue-600" />
+                      <Mail className="w-5 h-5 text-green-600" />
                       <div>
-                        <div className="font-medium">Email</div>
-                        <div className="text-sm text-gray-600">info@pvconsulting.hr</div>
+                        <div className="font-medium text-sm sm:text-base">Email</div>
+                        <div className="text-xs sm:text-sm text-gray-600">info@pvconsulting.hr</div>
                       </div>
                     </div>
                     <Link to="/kontakt" className="block">
-                      <Button className="w-full">
+                      <Button className="w-full bg-green-600 hover:bg-green-700">
                         Pošaljite upit
                       </Button>
                     </Link>
@@ -256,10 +256,10 @@ const ServiceDetail = () => {
                         return (
                           <Link key={otherService.id} to={`/${otherService.id}`}>
                             <div className="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50 transition-colors">
-                              <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                                <OtherIcon className="w-4 h-4 text-blue-600" />
+                              <div className="w-6 h-6 sm:w-8 sm:h-8 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <OtherIcon className="w-3 h-3 sm:w-4 sm:h-4 text-green-600" />
                               </div>
-                              <span className="text-sm font-medium text-gray-900 hover:text-blue-600">
+                              <span className="text-xs sm:text-sm font-medium text-gray-900 hover:text-green-600">
                                 {otherService.title}
                               </span>
                             </div>
@@ -275,21 +275,21 @@ const ServiceDetail = () => {
         </div>
 
         {/* CTA Section */}
-        <div className="bg-gradient-to-br from-blue-600 to-blue-800 py-16">
+        <div className="bg-gradient-to-br from-green-600 to-green-800 py-12 sm:py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl font-bold text-white mb-4">
+            <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
               Trebate {service.title.toLowerCase()}?
             </h2>
-            <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+            <p className="text-lg sm:text-xl text-green-100 mb-6 sm:mb-8 max-w-2xl mx-auto">
               Kontaktirajte nas danas za besplatnu konzultaciju i personaliziranu ponudu
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <Link to="/kontakt">
-                <Button size="lg" variant="secondary" className="bg-white text-blue-600 hover:bg-gray-100">
+                <Button size="lg" variant="secondary" className="bg-white text-green-600 hover:bg-gray-100 w-full sm:w-auto">
                   Zatražite ponudu
                 </Button>
               </Link>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600">
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-green-600 w-full sm:w-auto">
                 <Phone className="w-4 h-4 mr-2" />
                 Pozovite nas
               </Button>

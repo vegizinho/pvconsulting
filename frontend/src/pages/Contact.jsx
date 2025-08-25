@@ -88,82 +88,82 @@ const Contact = () => {
 
       <div className="min-h-screen bg-gray-50">
         {/* Hero Section */}
-        <div className="bg-gradient-to-br from-blue-50 to-indigo-50 py-16">
+        <div className="bg-gradient-to-br from-green-50 to-emerald-50 py-12 sm:py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
               Kontaktirajte nas
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
               Spremni smo odgovoriti na sva vaša pitanja i pomoći vam s vašim projektima. 
               Kontaktirajte nas za besplatnu konzultaciju.
             </p>
           </div>
         </div>
 
-        <div className="py-16">
+        <div className="py-12 sm:py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
               {/* Contact Information */}
-              <div className="space-y-8">
+              <div className="space-y-6 lg:space-y-8">
                 <div>
-                  <h2 className="text-2xl font-bold text-gray-900 mb-6">Informacije o kontaktu</h2>
-                  <div className="space-y-6">
+                  <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6">Informacije o kontaktu</h2>
+                  <div className="space-y-4 sm:space-y-6">
                     <Card>
-                      <CardContent className="p-6">
+                      <CardContent className="p-4 sm:p-6">
                         <div className="flex items-start space-x-4">
-                          <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                            <Phone className="w-6 h-6 text-blue-600" />
+                          <div className="w-10 h-10 sm:w-12 sm:h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <Phone className="w-5 h-5 sm:w-6 sm:h-6 text-green-600" />
                           </div>
                           <div>
                             <h3 className="font-semibold text-gray-900 mb-1">Telefon</h3>
-                            <p className="text-gray-600">{companyInfo.phone}</p>
-                            <p className="text-sm text-gray-500 mt-1">Pon - Pet: 08:00 - 17:00</p>
+                            <p className="text-gray-600 text-sm sm:text-base">{companyInfo.phone}</p>
+                            <p className="text-xs sm:text-sm text-gray-500 mt-1">Pon - Pet: 08:00 - 17:00</p>
                           </div>
                         </div>
                       </CardContent>
                     </Card>
 
                     <Card>
-                      <CardContent className="p-6">
+                      <CardContent className="p-4 sm:p-6">
                         <div className="flex items-start space-x-4">
-                          <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                            <Mail className="w-6 h-6 text-blue-600" />
+                          <div className="w-10 h-10 sm:w-12 sm:h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <Mail className="w-5 h-5 sm:w-6 sm:h-6 text-green-600" />
                           </div>
                           <div>
                             <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
-                            <p className="text-gray-600">{companyInfo.email}</p>
-                            <p className="text-sm text-gray-500 mt-1">Odgovor u roku od 24h</p>
+                            <p className="text-gray-600 text-sm sm:text-base">{companyInfo.email}</p>
+                            <p className="text-xs sm:text-sm text-gray-500 mt-1">Odgovor u roku od 24h</p>
                           </div>
                         </div>
                       </CardContent>
                     </Card>
 
                     <Card>
-                      <CardContent className="p-6">
+                      <CardContent className="p-4 sm:p-6">
                         <div className="flex items-start space-x-4">
-                          <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                            <MapPin className="w-6 h-6 text-blue-600" />
+                          <div className="w-10 h-10 sm:w-12 sm:h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <MapPin className="w-5 h-5 sm:w-6 sm:h-6 text-green-600" />
                           </div>
                           <div>
                             <h3 className="font-semibold text-gray-900 mb-1">Adresa</h3>
-                            <p className="text-gray-600">{companyInfo.address}</p>
+                            <p className="text-gray-600 text-sm sm:text-base">{companyInfo.address}</p>
                           </div>
                         </div>
                       </CardContent>
                     </Card>
 
                     <Card>
-                      <CardContent className="p-6">
+                      <CardContent className="p-4 sm:p-6">
                         <div className="flex items-start space-x-4">
-                          <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                            <Clock className="w-6 h-6 text-blue-600" />
+                          <div className="w-10 h-10 sm:w-12 sm:h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <Clock className="w-5 h-5 sm:w-6 sm:h-6 text-green-600" />
                           </div>
                           <div>
                             <h3 className="font-semibold text-gray-900 mb-1">Radno vrijeme</h3>
-                            <div className="text-gray-600 space-y-1">
+                            <div className="text-gray-600 space-y-1 text-sm sm:text-base">
                               <p>Ponedjeljak - Petak: 08:00 - 17:00</p>
                               <p>Subota: 09:00 - 13:00</p>
-                              <p className="text-sm text-gray-500">Nedjelja: Zatvoreno</p>
+                              <p className="text-xs sm:text-sm text-gray-500">Nedjelja: Zatvoreno</p>
                             </div>
                           </div>
                         </div>
@@ -177,8 +177,8 @@ const Contact = () => {
               <div className="lg:col-span-2">
                 <Card className="shadow-lg">
                   <CardHeader>
-                    <CardTitle className="text-2xl flex items-center space-x-2">
-                      <MessageSquare className="w-6 h-6 text-blue-600" />
+                    <CardTitle className="text-xl sm:text-2xl flex items-center space-x-2">
+                      <MessageSquare className="w-5 h-5 sm:w-6 sm:h-6 text-green-600" />
                       <span>Pošaljite nam poruku</span>
                     </CardTitle>
                     <CardDescription>
@@ -186,8 +186,8 @@ const Contact = () => {
                     </CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <form onSubmit={handleSubmit} className="space-y-6">
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                         <div>
                           <Label htmlFor="name">Ime i prezime *</Label>
                           <Input
@@ -213,7 +213,7 @@ const Contact = () => {
                         </div>
                       </div>
 
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                         <div>
                           <Label htmlFor="phone">Broj telefona</Label>
                           <Input
@@ -272,7 +272,7 @@ const Contact = () => {
                       <Button 
                         type="submit" 
                         size="lg" 
-                        className="w-full bg-blue-600 hover:bg-blue-700"
+                        className="w-full bg-green-600 hover:bg-green-700"
                         disabled={isSubmitting}
                       >
                         {isSubmitting ? (
@@ -285,9 +285,9 @@ const Contact = () => {
                         )}
                       </Button>
 
-                      <p className="text-sm text-gray-500 text-center">
+                      <p className="text-xs sm:text-sm text-gray-500 text-center">
                         Slanjem forme prihvaćate našu{' '}
-                        <a href="/politika-privatnosti" className="text-blue-600 hover:underline">
+                        <a href="/politika-privatnosti" className="text-green-600 hover:underline">
                           politiku privatnosti
                         </a>
                       </p>
@@ -300,16 +300,16 @@ const Contact = () => {
         </div>
 
         {/* Map Section */}
-        <div className="bg-white py-16">
+        <div className="bg-white py-12 sm:py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-8">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">Naša lokacija</h2>
-              <p className="text-xl text-gray-600">Posjetite nas u srcu Siska</p>
+            <div className="text-center mb-6 sm:mb-8">
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">Naša lokacija</h2>
+              <p className="text-lg sm:text-xl text-gray-600">Posjetite nas u srcu Siska</p>
             </div>
             <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg">
-              <div className="bg-gray-200 flex items-center justify-center h-96">
+              <div className="bg-gray-200 flex items-center justify-center h-64 sm:h-96">
                 <div className="text-center text-gray-500">
-                  <MapPin className="w-12 h-12 mx-auto mb-3" />
+                  <MapPin className="w-8 h-8 sm:w-12 sm:h-12 mx-auto mb-3" />
                   <p className="font-medium">Google Maps</p>
                   <p className="text-sm">{companyInfo.address}</p>
                 </div>
