@@ -25,15 +25,15 @@ const PrivacyPolicy = () => {
 
       <div className="min-h-screen bg-gray-50">
         {/* Hero Section */}
-        <div className="bg-gradient-to-br from-blue-50 to-indigo-50 py-16">
+        <div className="bg-gradient-to-br from-green-50 to-emerald-50 py-12 sm:py-16">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div className="flex items-center justify-center space-x-2 mb-6">
-              <Shield className="w-10 h-10 text-blue-600" />
+            <div className="flex items-center justify-center space-x-2 mb-4 sm:mb-6">
+              <Shield className="w-8 h-8 sm:w-10 sm:h-10 text-green-600" />
             </div>
-            <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
               Politika privatnosti
             </h1>
-            <p className="text-xl text-gray-600">
+            <p className="text-lg sm:text-xl text-gray-600">
               Vaša privatnost nam je važna. Ova politika objašnjava kako koristimo vaše podatke.
             </p>
             <p className="text-sm text-gray-500 mt-4">
