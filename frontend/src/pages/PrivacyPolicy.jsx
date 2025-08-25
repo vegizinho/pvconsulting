@@ -118,7 +118,7 @@ const PrivacyPolicy = () => {
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center space-x-2">
-                    <Lock className="w-5 h-5 text-blue-600" />
+                    <Lock className="w-5 h-5 text-green-600" />
                     <span>Zaštita podataka</span>
                   </CardTitle>
                 </CardHeader>
