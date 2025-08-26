@@ -304,13 +304,13 @@ const Contact = () => {
         <div className="bg-white py-12 sm:py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-6 sm:mb-8">
-              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">Naša lokacija</h2>
-              <p className="text-lg sm:text-xl text-gray-600">Posjetite nas u srcu Siska</p>
+              <h2 className="text-2xl sm:text-3xl font-bold mb-4" style={{ color: '#122a3a' }}>Naša lokacija</h2>
+              <p className="text-lg sm:text-xl" style={{ color: '#4c555c' }}>Posjetite nas u srcu Siska</p>
             </div>
             <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg">
-              <div className="bg-gray-200 flex items-center justify-center h-64 sm:h-96">
-                <div className="text-center text-gray-500">
-                  <MapPin className="w-8 h-8 sm:w-12 sm:h-12 mx-auto mb-3" />
+              <div className="flex items-center justify-center h-64 sm:h-96" style={{ backgroundColor: '#8093a020' }}>
+                <div className="text-center" style={{ color: '#4c555c' }}>
+                  <MapPin className="w-8 h-8 sm:w-12 sm:h-12 mx-auto mb-3" style={{ color: '#44687a' }} />
                   <p className="font-medium">Google Maps</p>
                   <p className="text-sm">{companyInfo.address}</p>
                 </div>
