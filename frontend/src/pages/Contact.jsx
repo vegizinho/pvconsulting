@@ -130,9 +130,9 @@ const Contact = () => {
                             <Mail className="w-5 h-5 sm:w-6 sm:h-6" style={{ color: '#215354' }} />
                           </div>
                           <div>
-                            <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
-                            <p className="text-gray-600 text-sm sm:text-base">{companyInfo.email}</p>
-                            <p className="text-xs sm:text-sm text-gray-500 mt-1">Odgovor u roku od 24h</p>
+                            <h3 className="font-semibold mb-1" style={{ color: '#122a3a' }}>Email</h3>
+                            <p className="text-sm sm:text-base" style={{ color: '#4c555c' }}>{companyInfo.email}</p>
+                            <p className="text-xs sm:text-sm mt-1" style={{ color: '#8093a0' }}>Odgovor u roku od 24h</p>
                           </div>
                         </div>
                       </CardContent>
