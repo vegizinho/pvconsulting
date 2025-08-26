@@ -13,7 +13,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-green-600 to-green-800 rounded-lg flex items-center justify-center">
+              <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-indigo-600 to-purple-700 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-sm sm:text-lg">PV</span>
               </div>
               <div>
@@ -65,25 +65,25 @@ const Footer = () => {
             <h3 className="font-semibold text-base sm:text-lg mb-4">Kontakt</h3>
             <div className="space-y-3">
               <div className="flex items-start space-x-3">
-                <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-green-400 mt-0.5 flex-shrink-0" />
+                <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-indigo-400 mt-0.5 flex-shrink-0" />
                 <div className="text-sm text-gray-300">
                   {companyInfo.address}
                 </div>
               </div>
               <div className="flex items-center space-x-3">
-                <Phone className="w-4 h-4 sm:w-5 sm:h-5 text-green-400 flex-shrink-0" />
+                <Phone className="w-4 h-4 sm:w-5 sm:h-5 text-purple-400 flex-shrink-0" />
                 <div className="text-sm text-gray-300">
                   {companyInfo.phone}
                 </div>
               </div>
               <div className="flex items-center space-x-3">
-                <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-green-400 flex-shrink-0" />
+                <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-indigo-400 flex-shrink-0" />
                 <div className="text-sm text-gray-300">
                   {companyInfo.email}
                 </div>
               </div>
               <div className="flex items-start space-x-3">
-                <Clock className="w-4 h-4 sm:w-5 sm:h-5 text-green-400 mt-0.5 flex-shrink-0" />
+                <Clock className="w-4 h-4 sm:w-5 sm:h-5 text-purple-400 mt-0.5 flex-shrink-0" />
                 <div className="text-sm text-gray-300">
                   Pon - Pet: 08:00 - 17:00<br />
                   Sub: 09:00 - 13:00

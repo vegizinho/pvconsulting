@@ -20,14 +20,14 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-14 sm:h-16">
           {/* Logo - Compact Layout */}
           <Link to="/" className="flex items-center space-x-3">
-            <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-green-600 to-green-800 rounded-lg flex items-center justify-center flex-shrink-0">
+            <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-indigo-600 to-purple-700 rounded-lg flex items-center justify-center flex-shrink-0">
               <span className="text-white font-bold text-lg sm:text-xl">PV</span>
             </div>
             <div className="hidden sm:block">
               <div className="font-bold text-gray-900 text-lg leading-tight">
                 PV Consulting d.o.o.
               </div>
-              <div className="text-xs text-green-600 leading-none">
+              <div className="text-xs text-indigo-600 leading-none">
                 građevinski inženjering
               </div>
             </div>
@@ -44,8 +44,8 @@ const Navigation = () => {
                     size="sm"
                     className={`text-xs font-medium px-2 py-1 h-7 ${
                       location.pathname === "/" 
-                        ? "bg-green-600 hover:bg-green-700 text-white" 
-                        : "hover:bg-green-50 hover:text-green-700"
+                        ? "bg-indigo-600 hover:bg-indigo-700 text-white" 
+                        : "hover:bg-indigo-50 hover:text-indigo-700"
                     }`}
                   >
                     Početna
@@ -58,8 +58,8 @@ const Navigation = () => {
                       size="sm"
                       className={`text-xs font-medium px-2 py-1 h-7 ${
                         location.pathname === item.href 
-                          ? "bg-green-600 hover:bg-green-700 text-white" 
-                          : "hover:bg-green-50 hover:text-green-700"
+                          ? "bg-indigo-600 hover:bg-indigo-700 text-white" 
+                          : "hover:bg-indigo-50 hover:text-indigo-700"
                       }`}
                     >
                       {item.name.split(' ').slice(0, 2).join(' ')}
@@ -77,8 +77,8 @@ const Navigation = () => {
                       size="sm"
                       className={`text-xs font-medium px-2 py-1 h-7 ${
                         location.pathname === item.href 
-                          ? "bg-green-600 hover:bg-green-700 text-white" 
-                          : "hover:bg-green-50 hover:text-green-700"
+                          ? "bg-purple-600 hover:bg-purple-700 text-white" 
+                          : "hover:bg-purple-50 hover:text-purple-700"
                       }`}
                     >
                       {item.name.split(' ').slice(0, 2).join(' ')}
@@ -92,8 +92,8 @@ const Navigation = () => {
                       size="sm"
                       className={`text-xs font-medium px-2 py-1 h-7 ${
                         location.pathname === item.href 
-                          ? "bg-green-600 hover:bg-green-700 text-white" 
-                          : "hover:bg-green-50 hover:text-green-700"
+                          ? "bg-purple-600 hover:bg-purple-700 text-white" 
+                          : "hover:bg-purple-50 hover:text-purple-700"
                       }`}
                     >
                       {item.name}
@@ -112,22 +112,22 @@ const Navigation = () => {
                 size="sm"
                 className={`text-xs font-medium px-2 py-1 ${
                   location.pathname === "/" 
-                    ? "bg-green-600 hover:bg-green-700 text-white" 
-                    : "hover:bg-green-50 hover:text-green-700"
+                    ? "bg-indigo-600 hover:bg-indigo-700 text-white" 
+                    : "hover:bg-indigo-50 hover:text-indigo-700"
                 }`}
               >
                 Početna
               </Button>
             </Link>
-            {navigationItems.slice(1, 8).map((item) => (
+            {navigationItems.slice(1, 8).map((item, index) => (
               <Link key={item.href} to={item.href}>
                 <Button
                   variant={location.pathname === item.href ? "default" : "ghost"}
                   size="sm"
                   className={`text-xs font-medium px-1.5 py-1 ${
                     location.pathname === item.href 
-                      ? "bg-green-600 hover:bg-green-700 text-white" 
-                      : "hover:bg-green-50 hover:text-green-700"
+                      ? `${index < 4 ? 'bg-indigo-600 hover:bg-indigo-700' : 'bg-purple-600 hover:bg-purple-700'} text-white` 
+                      : `${index < 4 ? 'hover:bg-indigo-50 hover:text-indigo-700' : 'hover:bg-purple-50 hover:text-purple-700'}`
                   }`}
                 >
                   {item.name.split(' ')[0]}
@@ -140,8 +140,8 @@ const Navigation = () => {
                 size="sm"
                 className={`text-xs font-medium px-2 py-1 ${
                   location.pathname === "/kontakt" 
-                    ? "bg-green-600 hover:bg-green-700 text-white" 
-                    : "hover:bg-green-50 hover:text-green-700"
+                    ? "bg-purple-600 hover:bg-purple-700 text-white" 
+                    : "hover:bg-purple-50 hover:text-purple-700"
                 }`}
               >
                 Kontakt
@@ -171,14 +171,14 @@ const Navigation = () => {
               </SheetTrigger>
               <SheetContent side="right" className="w-72 sm:w-80">
                 <div className="flex flex-col space-y-1 mt-6">
-                  {navigationItems.map((item) => (
+                  {navigationItems.map((item, index) => (
                     <Link key={item.href} to={item.href} onClick={() => setIsOpen(false)}>
                       <Button
                         variant={location.pathname === item.href ? "default" : "ghost"}
                         className={`w-full justify-start text-left font-medium ${
                           location.pathname === item.href 
-                            ? "bg-green-600 hover:bg-green-700 text-white" 
-                            : "hover:bg-green-50 hover:text-green-700"
+                            ? `${index < 5 ? 'bg-indigo-600 hover:bg-indigo-700' : 'bg-purple-600 hover:bg-purple-700'} text-white` 
+                            : `${index < 5 ? 'hover:bg-indigo-50 hover:text-indigo-700' : 'hover:bg-purple-50 hover:text-purple-700'}`
                         }`}
                       >
                         {item.name}
