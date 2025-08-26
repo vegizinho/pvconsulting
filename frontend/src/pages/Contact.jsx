@@ -141,8 +141,8 @@ const Contact = () => {
                     <Card>
                       <CardContent className="p-4 sm:p-6">
                         <div className="flex items-start space-x-4">
-                          <div className="w-10 h-10 sm:w-12 sm:h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                            <MapPin className="w-5 h-5 sm:w-6 sm:h-6 text-green-600" />
+                          <div className="w-10 h-10 sm:w-12 sm:h-12 bg-indigo-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <MapPin className="w-5 h-5 sm:w-6 sm:h-6 text-indigo-600" />
                           </div>
                           <div>
                             <h3 className="font-semibold text-gray-900 mb-1">Adresa</h3>
