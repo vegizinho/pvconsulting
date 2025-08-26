@@ -33,7 +33,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Focus outline for accessibility */
 *:focus {
-  outline: 2px solid #6366f1;
+  outline: 2px solid #44687a;
   outline-offset: 2px;
 }
 
@@ -47,12 +47,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom, #6366f1, #9333ea);
+  background: linear-gradient(to bottom, #44687a, #215354);
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(to bottom, #4f46e5, #7c3aed);
+  background: linear-gradient(to bottom, #122a3a, #293042);
 }
 
 /* Smooth transitions for interactive elements */
@@ -116,24 +116,40 @@ button, a, input, select, textarea {
 
 .hover-lift:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 25px -3px rgba(99, 102, 241, 0.1), 0 4px 6px -2px rgba(147, 51, 234, 0.05);
+  box-shadow: 0 10px 25px -3px rgba(68, 104, 122, 0.1), 0 4px 6px -2px rgba(33, 83, 84, 0.05);
 }
 
-/* Indigo and purple gradient utilities */
-.bg-gradient-indigo {
-  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+/* Custom color palette utilities */
+.bg-primary {
+  background-color: #44687a;
 }
 
-.bg-gradient-purple {
-  background: linear-gradient(135deg, #9333ea 0%, #7c3aed 100%);
+.bg-secondary {
+  background-color: #215354;
 }
 
-.bg-gradient-indigo-purple {
-  background: linear-gradient(135deg, #6366f1 0%, #9333ea 100%);
+.bg-dark {
+  background-color: #122a3a;
 }
 
-.bg-gradient-light {
-  background: linear-gradient(135deg, #eef2ff 0%, #f3e8ff 100%);
+.bg-accent {
+  background-color: #8093a0;
+}
+
+.text-primary {
+  color: #44687a;
+}
+
+.text-secondary {
+  color: #215354;
+}
+
+.text-dark {
+  color: #122a3a;
+}
+
+.text-muted {
+  color: #4c555c;
 }
 
 /* Mobile navigation improvements */
