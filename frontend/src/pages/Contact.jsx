@@ -178,7 +178,7 @@ const Contact = () => {
                 <Card className="shadow-lg">
                   <CardHeader>
                     <CardTitle className="text-xl sm:text-2xl flex items-center space-x-2">
-                      <MessageSquare className="w-5 h-5 sm:w-6 sm:h-6 text-green-600" />
+                      <MessageSquare className="w-5 h-5 sm:w-6 sm:h-6 text-indigo-600" />
                       <span>Pošaljite nam poruku</span>
                     </CardTitle>
                     <CardDescription>
