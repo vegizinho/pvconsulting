@@ -106,7 +106,7 @@ const Contact = () => {
               {/* Contact Information */}
               <div className="space-y-6 lg:space-y-8">
                 <div>
-                  <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6">Informacije o kontaktu</h2>
+                  <h2 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6" style={{ color: '#122a3a' }}>Informacije o kontaktu</h2>
                   <div className="space-y-4 sm:space-y-6">
                     <Card>
                       <CardContent className="p-4 sm:p-6">
