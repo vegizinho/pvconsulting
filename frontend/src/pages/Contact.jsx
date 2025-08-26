@@ -272,7 +272,7 @@ const Contact = () => {
                       <Button 
                         type="submit" 
                         size="lg" 
-                        className="w-full bg-green-600 hover:bg-green-700"
+                        className="w-full bg-indigo-600 hover:bg-indigo-700"
                         disabled={isSubmitting}
                       >
                         {isSubmitting ? (
