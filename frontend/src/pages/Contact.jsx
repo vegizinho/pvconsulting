@@ -88,7 +88,7 @@ const Contact = () => {
 
       <div className="min-h-screen bg-gray-50">
         {/* Hero Section */}
-        <div className="bg-gradient-to-br from-green-50 to-emerald-50 py-12 sm:py-16">
+        <div className="bg-gradient-to-br from-indigo-50 to-purple-50 py-12 sm:py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
               Kontaktirajte nas
