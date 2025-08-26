@@ -287,7 +287,7 @@ const Contact = () => {
 
                       <p className="text-xs sm:text-sm text-gray-500 text-center">
                         Slanjem forme prihvaćate našu{' '}
-                        <a href="/politika-privatnosti" className="text-green-600 hover:underline">
+                        <a href="/politika-privatnosti" className="text-indigo-600 hover:underline">
                           politiku privatnosti
                         </a>
                       </p>
