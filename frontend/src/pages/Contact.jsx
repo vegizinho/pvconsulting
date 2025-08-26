@@ -286,9 +286,9 @@ const Contact = () => {
                         )}
                       </Button>
 
-                      <p className="text-xs sm:text-sm text-gray-500 text-center">
+                      <p className="text-xs sm:text-sm text-center" style={{ color: '#8093a0' }}>
                         Slanjem forme prihvaćate našu{' '}
-                        <a href="/politika-privatnosti" className="text-indigo-600 hover:underline">
+                        <a href="/politika-privatnosti" className="hover:underline" style={{ color: '#44687a' }}>
                           politiku privatnosti
                         </a>
                       </p>
