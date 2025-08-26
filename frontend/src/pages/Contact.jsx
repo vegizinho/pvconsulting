@@ -159,11 +159,11 @@ const Contact = () => {
                             <Clock className="w-5 h-5 sm:w-6 sm:h-6" style={{ color: '#293042' }} />
                           </div>
                           <div>
-                            <h3 className="font-semibold text-gray-900 mb-1">Radno vrijeme</h3>
-                            <div className="text-gray-600 space-y-1 text-sm sm:text-base">
+                            <h3 className="font-semibold mb-1" style={{ color: '#122a3a' }}>Radno vrijeme</h3>
+                            <div className="space-y-1 text-sm sm:text-base" style={{ color: '#4c555c' }}>
                               <p>Ponedjeljak - Petak: 08:00 - 17:00</p>
                               <p>Subota: 09:00 - 13:00</p>
-                              <p className="text-xs sm:text-sm text-gray-500">Nedjelja: Zatvoreno</p>
+                              <p className="text-xs sm:text-sm" style={{ color: '#8093a0' }}>Nedjelja: Zatvoreno</p>
                             </div>
                           </div>
                         </div>
