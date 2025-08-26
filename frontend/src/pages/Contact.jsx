@@ -126,8 +126,8 @@ const Contact = () => {
                     <Card>
                       <CardContent className="p-4 sm:p-6">
                         <div className="flex items-start space-x-4">
-                          <div className="w-10 h-10 sm:w-12 sm:h-12 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                            <Mail className="w-5 h-5 sm:w-6 sm:h-6 text-purple-600" />
+                          <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg flex items-center justify-center flex-shrink-0" style={{ backgroundColor: '#21535420' }}>
+                            <Mail className="w-5 h-5 sm:w-6 sm:h-6" style={{ color: '#215354' }} />
                           </div>
                           <div>
                             <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
