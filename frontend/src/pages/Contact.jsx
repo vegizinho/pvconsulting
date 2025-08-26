@@ -88,12 +88,12 @@ const Contact = () => {
 
       <div className="min-h-screen bg-gray-50">
         {/* Hero Section */}
-        <div className="bg-gradient-to-br from-indigo-50 to-purple-50 py-12 sm:py-16">
+        <div className="py-12 sm:py-16" style={{ background: 'linear-gradient(135deg, #8093a0 0%, white 50%, #8093a0 100%)' }}>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6" style={{ color: '#122a3a' }}>
               Kontaktirajte nas
             </h1>
-            <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl max-w-3xl mx-auto" style={{ color: '#4c555c' }}>
               Spremni smo odgovoriti na sva vaša pitanja i pomoći vam s vašim projektima. 
               Kontaktirajte nas za besplatnu konzultaciju.
             </p>
