@@ -73,7 +73,7 @@ const TermsOfService = () => {
                 <CardContent className="prose prose-gray max-w-none">
                   <p style={{ color: '#4c555c' }}>{companyInfo.name} pruža sljedeće usluge:</p>
                   <ul style={{ color: '#4c555c' }}>
-                    <li>Građevinski inženjering i projektiranje</li>
+                    <li>Građevinski inženjering i pomoć pri projektiranju</li>
                     <li>Usluge javne nabave za ponuditelje i naručitelje</li>
                     <li>Zaštita na radu</li>
                     <li>Knjigovodstvene usluge</li>
