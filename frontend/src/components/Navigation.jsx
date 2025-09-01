@@ -269,7 +269,7 @@ const Navigation = () => {
                     <div className="space-y-2 text-sm" style={{ color: '#4c555c' }}>
                       <div className="flex items-center space-x-2">
                         <Phone className="w-4 h-4" />
-                        <span>+385 44 123 456</span>
+                        <span>+385 98 9417 413</span>
                       </div>
                       <div className="flex items-center space-x-2">
                         <Mail className="w-4 h-4" />
