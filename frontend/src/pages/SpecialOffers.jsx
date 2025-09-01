@@ -259,7 +259,7 @@ const SpecialOffers = () => {
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <Link to="/kontakt">
                 <Button size="lg" className="bg-white hover:opacity-90 w-full sm:w-auto transition-opacity" style={{ color: '#44687a' }}>
-                  Zatražite besplatnu konzultaciju
+                  Zatražite besplatne konultacije
                 </Button>
               </Link>
               <Button size="lg" variant="outline" className="border-white text-white hover:bg-white w-full sm:w-auto transition-all" 
