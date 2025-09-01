@@ -14,7 +14,8 @@ import {
   MapPin, 
   Clock, 
   Send,
-  MessageSquare
+  MessageSquare,
+  FileText
 } from 'lucide-react';
 
 const Contact = () => {
