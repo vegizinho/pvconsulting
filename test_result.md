@@ -101,3 +101,86 @@
 #====================================================================================================
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
+
+user_problem_statement: "Implement the following pending tasks: 1) Add scroll-to-top functionality for footer links, 2) Change 'Konzultacija' to 'Konultacije' everywhere on the site, 3) Update service description, 4) Reorder items in service detail page, 5) Ensure phone number consistency."
+
+frontend:
+  - task: "Change 'Konzultacija' to 'Konultacije' throughout the site"
+    implemented: true
+    working: true
+    file: "multiple files (ServiceDetail.jsx, SpecialOffers.jsx, Contact.jsx, Home.jsx)"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "Updated all instances of 'konzultacija' to 'konultacije' in ServiceDetail.jsx, SpecialOffers.jsx, Contact.jsx, and Home.jsx"
+
+  - task: "Update service description to 'Pomoć pri projektiranju i nadzoru građevinskih objekata'"
+    implemented: true
+    working: true
+    file: "/app/frontend/src/data/mock.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "Updated the description for Građevinski inženjering service in mock.js"
+
+  - task: "Ensure phone number consistency (+385 98 9417 413)"
+    implemented: true
+    working: true
+    file: "multiple files (ServiceDetail.jsx, Navigation.jsx, SpecialOffers.jsx)"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "Updated all hardcoded phone numbers to match the consistent format +385 98 9417 413"
+
+  - task: "Add scroll-to-top functionality for footer links"
+    implemented: true
+    working: true
+    file: "/app/frontend/src/components/Footer.jsx"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: true
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "Added handleLinkClick function with smooth scroll to top behavior for all footer navigation links"
+
+  - task: "Reorder items in Građevinski inženjering service detail page"
+    implemented: false
+    working: "NA"
+    file: "/app/frontend/src/data/mock.js"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Still need to reorder the features array items in mock.js for Građevinski inženjering service"
+
+metadata:
+  created_by: "main_agent"
+  version: "1.0"
+  test_sequence: 1
+  run_ui: false
+
+test_plan:
+  current_focus:
+    - "Complete reordering of service items"
+    - "Verify all text changes are applied correctly"
+    - "Test scroll-to-top functionality"
+    - "Confirm phone number consistency"
+  stuck_tasks: []
+  test_all: false
+  test_priority: "high_first"
+
+agent_communication:
+  - agent: "main"
+    message: "Implemented most of the pending tasks: text changes, phone number updates, scroll-to-top functionality. Still need to complete the reordering of items in the Građevinski inženjering service."
