@@ -87,8 +87,8 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <Clock className="w-4 h-4 sm:w-5 sm:h-5 mt-0.5 flex-shrink-0" style={{ color: '#293042' }} />
                 <div className="text-sm" style={{ color: '#8093a0' }}>
-                  Pon - Pet: 08:00 - 17:00<br />
-                  Sub: 09:00 - 13:00
+                  Pon - Pet: 08:00 - 16:00<br />
+                  Sub i ned: zatvoreno
                 </div>
               </div>
             </div>
