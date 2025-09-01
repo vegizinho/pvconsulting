@@ -305,7 +305,7 @@ const ServiceDetail = () => {
               Trebate {service.title.toLowerCase()}?
             </h2>
             <p className="text-lg sm:text-xl mb-6 sm:mb-8 max-w-2xl mx-auto" style={{ color: '#8093a0' }}>
-              Kontaktirajte nas danas za besplatnu konzultaciju i personaliziranu ponudu
+              Kontaktirajte nas danas za besplatne konultacije i personaliziranu ponudu
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <Link to="/kontakt">
