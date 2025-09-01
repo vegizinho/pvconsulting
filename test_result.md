@@ -183,4 +183,7 @@ test_plan:
 
 agent_communication:
   - agent: "main"
-    message: "Successfully implemented all pending tasks: 1) Changed 'Konzultacija' to 'Konultacije' throughout the site, 2) Updated service description, 3) Ensured phone number consistency (+385 98 9417 413), 4) Added scroll-to-top functionality for footer links, 5) Verified items in Građevinski inženjering service are already correctly ordered. All functionality verified through screenshots."
+    message: "Successfully implemented all pending tasks: 1) Changed 'Konzultacija' to 'Konultacije' throughout the site, 2) Updated service description, 3) Ensured phone number consistency (+385 98 9417 413), 4) Added scroll-to-top functionality for footer links, 5) Verified items in Građevinski inženjering service are already correctly ordered. New tasks completed: 6) Removed 'Uvjeti plaćanja' and 'Prekidanje usluga' sections from Terms of Service page, 7) Updated service description text in Terms of Service. All functionality verified through screenshots."
+
+  - agent: "main"
+    message: "Updated Terms of Service page: 1) Completely removed 'Uvjeti plaćanja' (Payment Terms) section, 2) Completely removed 'Prekidanje usluga' (Service Termination) section, 3) Changed 'Građevinski inženjering i projektiranje' to 'Građevinski inženjering i pomoć pri projektiranju' in the service description section. Changes verified through screenshots."
