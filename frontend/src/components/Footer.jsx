@@ -38,6 +38,7 @@ const Footer = () => {
                 <li key={item.href}>
                   <Link 
                     to={item.href}
+                    onClick={handleLinkClick}
                     className="text-sm hover:text-white transition-colors"
                     style={{ color: '#8093a0' }}
                   >
