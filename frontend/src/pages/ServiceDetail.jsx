@@ -143,7 +143,7 @@ const ServiceDetail = () => {
                       e.target.style.color = '#215354';
                     }}>
                     <Phone className="w-4 h-4 mr-2" />
-                    +385 44 123 456
+                    +385 98 9417 413
                   </Button>
                 </div>
               </div>
