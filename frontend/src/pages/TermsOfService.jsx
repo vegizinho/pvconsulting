@@ -170,47 +170,6 @@ const TermsOfService = () => {
                 </CardContent>
               </Card>
 
-              {/* Payment Terms */}
-              <Card>
-                <CardHeader>
-                  <CardTitle style={{ color: '#122a3a' }}>Uvjeti plaćanja</CardTitle>
-                </CardHeader>
-                <CardContent className="prose prose-gray max-w-none">
-                  <h3 style={{ color: '#122a3a' }}>Cijene</h3>
-                  <p style={{ color: '#4c555c' }}>
-                    Cijene naših usluga navode se u hrvatskim kunama (HRK) ili eurima (EUR) 
-                    i mogu se mijenjati bez prethodne najave.
-                  </p>
-                  
-                  <h3 style={{ color: '#122a3a' }}>Plaćanje</h3>
-                  <ul style={{ color: '#4c555c' }}>
-                    <li>Računi se izdaju prema dogovorenom rasporedu</li>
-                    <li>Plaćanje je potrebno izvršiti u roku od 30 dana</li>
-                    <li>Kasnine se mogu naplatiti u skladu sa zakonom</li>
-                    <li>Sve cijene uključuju PDV prema važećim stopama</li>
-                  </ul>
-                </CardContent>
-              </Card>
-
-              {/* Termination */}
-              <Card>
-                <CardHeader>
-                  <CardTitle style={{ color: '#122a3a' }}>Prekidanje usluga</CardTitle>
-                </CardHeader>
-                <CardContent className="prose prose-gray max-w-none">
-                  <p style={{ color: '#4c555c' }}>
-                    Bilo koja strana može prekinuti ugovorni odnos uz prethodnu pisanu obavijest 
-                    od 30 dana. U slučaju kršenja uvjeta, možemo odmah prekinuti pružanje usluga.
-                  </p>
-                  
-                  <h3 style={{ color: '#122a3a' }}>Posljedice prekidanja</h3>
-                  <ul style={{ color: '#4c555c' }}>
-                    <li>Obveza plaćanja za već pružene usluge</li>
-                    <li>Vraćanje svih poslovnih materijala</li>
-                    <li>Prestanak prava korišnja naših resursa</li>
-                  </ul>
-                </CardContent>
-              </Card>
 
               {/* Governing Law */}
               <Card>
