@@ -175,7 +175,7 @@ const SpecialOffers = () => {
                             e.target.style.color = colorScheme.secondary;
                           }}
                           asChild>
-                          <a href="tel:+385441234456">
+                          <a href="tel:+385989417413">
                             <Phone className="w-4 h-4 mr-2" />
                             Pozovite nas
                           </a>
