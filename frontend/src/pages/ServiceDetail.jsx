@@ -249,7 +249,7 @@ const ServiceDetail = () => {
                       <Phone className="w-5 h-5" style={{ color: '#44687a' }} />
                       <div>
                         <div className="font-medium text-sm sm:text-base" style={{ color: '#122a3a' }}>Telefon</div>
-                        <div className="text-xs sm:text-sm" style={{ color: '#4c555c' }}>+385 44 123 456</div>
+                        <div className="text-xs sm:text-sm" style={{ color: '#4c555c' }}>+385 98 9417 413</div>
                       </div>
                     </div>
                     <div className="flex items-center space-x-3">
