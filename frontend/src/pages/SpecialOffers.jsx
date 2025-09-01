@@ -183,7 +183,7 @@ const SpecialOffers = () => {
                       </div>
 
                       <div className="mt-4 sm:mt-6 pt-4 sm:pt-6 text-center" style={{ borderTop: '1px solid #8093a020' }}>
-                        <p className="text-xs sm:text-sm mb-2" style={{ color: '#8093a0' }}>Besplatna konzultacija uključena</p>
+                        <p className="text-xs sm:text-sm mb-2" style={{ color: '#8093a0' }}>Besplatne konultacije uključene</p>
                         <div className="flex items-center justify-center space-x-1" style={{ color: '#8093a0' }}>
                           {[...Array(5)].map((_, i) => (
                             <Star key={i} className="w-3 h-3 sm:w-4 sm:h-4 fill-current" />
