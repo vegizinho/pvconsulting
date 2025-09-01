@@ -5,9 +5,11 @@ export const companyInfo = {
   description: "PV Consulting d.o.o. je poduzeće osnovano u veljači 2025. godine u Sisku i prvenstveno se bavi građevinskim inženjeringom i javnom nabavom, ali i drugim djelatnostima kao što su geodetska djelatnost, savjetovanje u vezi s poslovanjem i upravljanjem, istraživanje tržišta i ispitivanje javnog mnijenja, administrativne djelatnosti, poslovi zaštite na radu, organiziranje sajmova, priredbi, kongresa, koncerata, promocija, zabavnih manifestacija, izložbi, seminara, tečajeva i tribina, poslovi upravljanja i održavanja nekretnina te računovodstveni poslovi.",
   established: "veljača 2025.",
   location: "Sisak, Hrvatska",
-  phone: "+385 44 123 456",
+  phone: "+385(98)9417413",
   email: "info@pvconsulting.hr",
-  address: "Ulica Hrvatske bratske zajednice 1, 44000 Sisak"
+  address: "Kupska ulica 12, 44000 Sisak",
+  oib: "37847992892",
+  legalName: "PV Consulting d.o.o. za građevinski inženjering i javnu nabavu"
 };
 
 export const services = [
