@@ -320,7 +320,7 @@ const Home = () => {
               Spremni ste za početak?
             </h2>
             <p className="text-lg sm:text-xl mb-6 sm:mb-8" style={{ color: '#8093a0' }}>
-              Kontaktirajte nas danas za besplatnu konzultaciju i saznajte kako možemo pomoći vašem projektu
+              Kontaktirajte nas danas za besplatne konultacije i saznajte kako možemo pomoći vašem projektu
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <Link to="/kontakt">
