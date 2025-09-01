@@ -144,7 +144,7 @@ export const specialOffers = [
 export const navigationItems = [
   { name: "Početna", href: "/" },
   { name: "Građevinski inženjering", href: "/gradevinski-injenjering" },
-  { name: "Projektiranje", href: "/usluge-projektiranja" },
+  { name: "Pomoć u projektiranju", href: "/usluge-projektiranja" },
   { name: "JN Ponuditelji", href: "/javna-nabava-ponuditelji" },
   { name: "JN Naručitelji", href: "/javna-nabava-narucitelji" },
   { name: "Zaštita na radu", href: "/zastita-na-radu" },
