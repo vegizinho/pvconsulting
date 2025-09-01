@@ -117,7 +117,7 @@ const Contact = () => {
                           <div>
                             <h3 className="font-semibold mb-1" style={{ color: '#122a3a' }}>Telefon</h3>
                             <p className="text-sm sm:text-base" style={{ color: '#4c555c' }}>{companyInfo.phone}</p>
-                            <p className="text-xs sm:text-sm mt-1" style={{ color: '#8093a0' }}>Pon - Pet: 08:00 - 17:00</p>
+                            <p className="text-xs sm:text-sm mt-1" style={{ color: '#8093a0' }}>Pon - Pet: 08:00 - 16:00</p>
                           </div>
                         </div>
                       </CardContent>
