@@ -116,18 +116,6 @@ export const services = [
 
 export const specialOffers = [
   {
-    id: 1,
-    title: "Paket za mala poduzeća",
-    description: "Kompletna podrška za pokretanje i vođenje malog poduzeća.",
-    price: "Početna cijena od 500 HRK",
-    features: [
-      "Osnivanje poduzeća",
-      "Mjesečno knjigovodstvo",
-      "Porezno savjetovanje",
-      "Pravna podrška"
-    ]
-  },
-  {
     id: 2,
     title: "Građevinski paket",
     description: "Sve što trebate za vaš građevinski projekt pod jednim krovom.",
@@ -135,7 +123,7 @@ export const specialOffers = [
     features: [
       "Projektiranje",
       "Građevinska dozvola",
-      "Nadzor radova",
+      "Pomoć pri nadzoru radova",
       "Tehnički pregled"
     ]
   },
