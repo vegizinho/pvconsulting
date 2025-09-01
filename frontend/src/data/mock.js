@@ -16,16 +16,16 @@ export const services = [
   {
     id: "gradevinski-injenjering",
     title: "Građevinski inženjering",
-    description: "Projektiranje i pomoć pri nadzoru građevinskih objekata, statički proračuni i konstrukcijska rješenja. **Izrada građevinske knjige, troškovnika i vođenje gradilišta.**",
+    description: "Pomoć pri projektiranju i nadzoru građevinskih objekata, statički proračuni i konstrukcijska rješenja. **Izrada građevinske knjige, troškovnika i vođenje gradilišta.**",
     icon: "Building2",
     features: [
+      "Izrada građevinske knjige",
+      "Izrada troškovnika", 
+      "Vođenje gradilišta",
       "Projektiranje stambenih i poslovnih objekata",
       "Statički proračuni konstrukcija",
       "Pomoć pri nadzoru izvođenja radova",
-      "Tehnički pregledi",
-      "Izrada građevinske knjige",
-      "Troškovnici",
-      "Vođenje gradilišta"
+      "Tehnički pregledi"
     ]
   },
   {
