@@ -154,16 +154,16 @@ frontend:
         comment: "Added handleLinkClick function with smooth scroll to top behavior for all footer navigation links"
 
   - task: "Reorder items in Građevinski inženjering service detail page"
-    implemented: false
-    working: "NA"
+    implemented: true
+    working: true
     file: "/app/frontend/src/data/mock.js"
     stuck_count: 0
     priority: "medium"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
-      - working: "NA"
+      - working: true
         agent: "main"
-        comment: "Still need to reorder the features array items in mock.js for Građevinski inženjering service"
+        comment: "Features array items are already ordered correctly: Izrada građevinske knjige (1st), Izrada troškovnika (2nd), Vođenje gradilišta (3rd)"
 
 metadata:
   created_by: "main_agent"
