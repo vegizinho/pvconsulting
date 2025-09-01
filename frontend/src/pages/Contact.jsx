@@ -294,6 +294,21 @@ const Contact = () => {
                     </form>
                   </CardContent>
                 </Card>
+
+                <Card>
+                  <CardContent className="p-4 sm:p-6">
+                    <div className="flex items-start space-x-4">
+                      <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg flex items-center justify-center flex-shrink-0" style={{ backgroundColor: '#4b4e4f20' }}>
+                        <FileText className="w-5 h-5 sm:w-6 sm:h-6" style={{ color: '#4b4e4f' }} />
+                      </div>
+                      <div>
+                        <h3 className="font-semibold mb-1" style={{ color: '#122a3a' }}>Podaci o tvrtki</h3>
+                        <p className="text-sm sm:text-base" style={{ color: '#4c555c' }}>{companyInfo.legalName}</p>
+                        <p className="text-xs sm:text-sm mt-1" style={{ color: '#8093a0' }}>OIB: {companyInfo.oib}</p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
               </div>
             </div>
           </div>
