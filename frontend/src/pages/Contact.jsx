@@ -96,7 +96,7 @@ const Contact = () => {
             </h1>
             <p className="text-lg sm:text-xl max-w-3xl mx-auto" style={{ color: '#4c555c' }}>
               Spremni smo odgovoriti na sva vaša pitanja i pomoći vam s vašim projektima. 
-              Kontaktirajte nas za besplatnu konzultaciju.
+              Kontaktirajte nas za besplatne konultacije.
             </p>
           </div>
         </div>
