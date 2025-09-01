@@ -230,7 +230,7 @@ const Navigation = () => {
             <div className="hidden 2xl:flex items-center space-x-3 text-xs">
               <div className="flex items-center space-x-1" style={{ color: '#4c555c' }}>
                 <Phone className="w-3 h-3" />
-                <span>+385(98)9417413</span>
+                <span>+385 98 9417 413</span>
               </div>
               <div className="flex items-center space-x-1" style={{ color: '#4c555c' }}>
                 <Mail className="w-3 h-3" />
