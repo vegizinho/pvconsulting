@@ -16,18 +16,21 @@ export const services = [
   {
     id: "gradevinski-injenjering",
     title: "Građevinski inženjering",
-    description: "Projektiranje i nadzor građevinskih objekata, statički proračuni i konstrukcijska rješenja.",
+    description: "Projektiranje i pomoć pri nadzoru građevinskih objekata, statički proračuni i konstrukcijska rješenja. **Izrada građevinske knjige, troškovnika i vođenje gradilišta.**",
     icon: "Building2",
     features: [
       "Projektiranje stambenih i poslovnih objekata",
       "Statički proračuni konstrukcija",
-      "Nadzor izvođenja radova",
-      "Tehnički pregledi"
+      "Pomoć pri nadzoru izvođenja radova",
+      "Tehnički pregledi",
+      "Izrada građevinske knjige",
+      "Troškovnici",
+      "Vođenje gradilišta"
     ]
   },
   {
     id: "usluge-projektiranja",
-    title: "Usluge projektiranja",
+    title: "Pomoć u projektiranju",
     description: "Kompletne usluge projektiranja od idejnih do izvedbenih projekata.",
     icon: "PenTool",
     features: [
@@ -70,7 +73,7 @@ export const services = [
       "Procjena rizika",
       "Obuka zaposlenika",
       "Planovi zaštite",
-      "Redoviti nadzor"
+      "Redoviti pomoć pri nadzoru"
     ]
   },
   {
