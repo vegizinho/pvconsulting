@@ -161,9 +161,8 @@ const Contact = () => {
                           <div>
                             <h3 className="font-semibold mb-1" style={{ color: '#122a3a' }}>Radno vrijeme</h3>
                             <div className="space-y-1 text-sm sm:text-base" style={{ color: '#4c555c' }}>
-                              <p>Ponedjeljak - Petak: 08:00 - 17:00</p>
-                              <p>Subota: 09:00 - 13:00</p>
-                              <p className="text-xs sm:text-sm" style={{ color: '#8093a0' }}>Nedjelja: Zatvoreno</p>
+                              <p>Ponedjeljak - Petak: 08:00 - 16:00</p>
+                              <p className="text-xs sm:text-sm" style={{ color: '#8093a0' }}>Subota i nedjelja: zatvoreno</p>
                             </div>
                           </div>
                         </div>
