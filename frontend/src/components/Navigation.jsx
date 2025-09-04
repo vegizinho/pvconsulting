@@ -32,7 +32,7 @@ const Navigation = () => {
           </Link>
 
           {/* Desktop Navigation - Clean 3-row layout */}
-          <div className="hidden lg:block">
+          <div className="hidden lg:block lg:py-1">
             <div className="flex flex-col space-y-1">
               {/* First row - Home + First 3 services */}
               <div className="flex items-center justify-center space-x-2">
