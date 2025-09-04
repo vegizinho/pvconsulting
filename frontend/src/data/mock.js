@@ -80,10 +80,8 @@ export const services = [
     description: "Profesionalne knjigovodstvene usluge za mikro i mala poduzeća, obrte",
     icon: "Calculator",
     features: [
-      "Vođenje poslovnih knjiga",
-      "Priprema financijskih izvješća",
-      "Porezno savjetovanje",
-      "Plaće i doprinosi"
+      "jednostavno knjigovodstvo: vođenje knjige primitaka i izdataka, knjige blagajne, knjige ulaznih računa, knjige izlaznih računa, izrada popisa dugotrajne nefinancijske imovine, knjiga putnih naloga, evidencija danih i primljenih garancija, godišnje financijsko izvješće",
+      "dvostavno knjigovodstvo: popis imovine i obveza, blagajničko poslovanje i platni promet, evidentiranje kratkotrajne i dugotrajne financijske imovine, evidentiranje kratkotrajne i dugotrajne materijalne imovine, evidentiranje i dugotrajne nematerijalne imovine, evidentiranje kratkoročnih i dugoročnih potraživanja i obveza, obračun PDV-a, obračun plaća i naknada zaposlenicima, evidentiranje robe u trgovini na veliko i malo, amortizacija, računovodstveno praćenje kategorija koje utječu na financijski rezultat, otvaranje poslovnih knjiga (dnevnika, glavne knjige i pomoćnih knjiga) i evidencija promjena u poslovanju"
     ]
   },
   {
