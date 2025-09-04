@@ -15,7 +15,7 @@ const Navigation = () => {
   return (
     <nav className="bg-white shadow-lg border-b sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-6">
-        <div className="flex justify-between items-center lg:items-start h-14 sm:h-16 lg:h-20">
+        <div className="flex justify-between items-center lg:items-start h-14 sm:h-16 lg:h-24">
           {/* Logo - Compact Layout */}
           <Link to="/" className="flex items-center space-x-3 lg:pt-2">
             <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg flex items-center justify-center flex-shrink-0" style={{ background: 'linear-gradient(135deg, #44687a 0%, #215354 100%)' }}>
