@@ -130,7 +130,7 @@ const Home = () => {
 
               <div className="grid grid-cols-3 gap-4 lg:gap-6 pt-6 lg:pt-8">
                 <div className="text-center">
-                  <div className="text-2xl sm:text-3xl font-bold" style={{ color: '#44687a' }}>50+</div>
+                  <div className="text-2xl sm:text-3xl font-bold" style={{ color: '#44687a' }}>100+</div>
                   <div className="text-xs sm:text-sm" style={{ color: '#4c555c' }}>Uspješnih projekata</div>
                 </div>
                 <div className="text-center">
