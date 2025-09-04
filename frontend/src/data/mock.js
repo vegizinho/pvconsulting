@@ -55,7 +55,7 @@ export const services = [
   {
     id: "javna-nabava-narucitelji",
     title: "Javna nabava za Naručitelje",
-    description: "Potpuna podrška naručiteljima u provedbi postupaka javne nabave.",
+    description: "provedba postupaka javne nabave i stručna pomoć Naručiteljima",
     icon: "Briefcase",
     features: [
       "Priprema tender dokumentacije",
