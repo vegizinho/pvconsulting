@@ -81,7 +81,7 @@ const Contact = () => {
     <>
       <SEO 
         title="Kontakt - PV Consulting d.o.o."
-        description="Kontaktirajte PV Consulting iz Siska za profesionalne usluge građevinskog inženjeringa, javne nabave i projektiranja. Besplatne konultacije!"
+        description="Kontaktirajte PV Consulting iz Siska za profesionalne usluge građevinskog inženjeringa, javne nabave i projektiranja. Besplatne konzultacije!"
         keywords="kontakt, PV Consulting, Sisak, građevinski inženjering, javna nabava, projektiranje, telefon, email"
         canonical="/kontakt"
         jsonLd={contactJsonLd}
