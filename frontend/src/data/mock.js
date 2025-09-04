@@ -59,10 +59,9 @@ export const services = [
     description: "Provedba postupaka javne nabave i stručna pomoć Naručiteljima",
     icon: "Briefcase",
     features: [
-      "Priprema tender dokumentacije",
-      "Provedba postupaka",
-      "Evaluacija ponuda",
-      "Ugovaranje"
+      "priprema postupka javne nabave: osnivanje stručnog povjerenstva, analiza tržišta, izrada cjelokupne dokumentacije o nabavi, postupak prethodnog savjetovanja sa zainteresiranim gospodarskim subjektima, razmatranje primjedbi i prijedloga, izrada izvješća o provedenom postupku prethodnog savjetovanja",
+      "provedba postupka javne nabave: objava javne nabave ili poziva na nadmetanje, komunikacija sa zainteresiranim gospodarskim subjektima, izrada i objava pojašnjenja ili izmjena dokumentacije o nabavi, zaprimanje i otvaranje ponuda, izrada zapisnika o otvaranju ponuda, postupak pregleda i ocjene ponuda, komunikacija s ponuditeljima, slanje zahtjeva za pojašnjenjem ili upotpunjavanjem ponuda, objašnjenjem izuzetno niskih cijena, prihvata računskih pogrešaka i dostavljanjem ažuriranih popratnih dokumenata, izrada zapisnika o pregledu i ocjeni ponuda, donošenje odluke o odabiru ili odluke o poništenju, omogućavanje ponuditeljima uvid u dokumentaciju postupka javne nabave, sastavljanje izvješća o postupku javne nabave i pohrana dokumentacije",
+      "sudjelovanje u žalbenom postupku: suradnja s Državnom komisijom za kontrolu postupaka javne nabave, očitovanje na eventualno izjavljenu žalbu"
     ]
   },
   {
