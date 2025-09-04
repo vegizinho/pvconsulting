@@ -9,10 +9,8 @@ const Navigation = () => {
   const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
 
-  // Split navigation items for better layout
-  const mainServices = navigationItems.slice(1, 5); // First 4 services
-  const secondaryServices = navigationItems.slice(5, 9); // Next 4 services
-  const otherPages = navigationItems.slice(9); // Remaining pages
+  // All navigation items for the new layout
+  const allNavigationItems = navigationItems;
 
   return (
     <nav className="bg-white shadow-lg border-b sticky top-0 z-50">
