@@ -67,7 +67,7 @@ export const services = [
   {
     id: "zastita-na-radu",
     title: "Zaštita na radu",
-    description: "Sveobuhvatne usluge zaštite zdravlja i sigurnosti na radnom mjestu.",
+    description: "usluge Koordinatora za zaštitu na radu u fazi projektiranja i tijekom izvođenja radova",
     icon: "Shield",
     features: [
       "Procjena rizika",
