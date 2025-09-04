@@ -48,10 +48,9 @@ export const services = [
     description: "Izrada ponuda, stručna pomoć Ponuditeljima u postupcima javne nabave",
     icon: "FileText",
     features: [
-      "Priprema ponuda",
-      "Analiza tender dokumentacije",
-      "Pravno savjetovanje",
-      "Zastupanje u postupcima"
+      "postupak prethodnog savjetovanja: analiza objavljene dokumentacije o nabavi, izrada i slanje primjedbi i prijedloga na dokumentaciju o nabavi",
+      "postupak javnog nadmetanja: analiza objavljene dokumentacije o nabavi, izrada ponude, izrada troškovnika (analiza tržišta, slanje upita dobavljačima, komunikacija s dobavljačima, analiza dostavljenih ponuda dobavljača, analize i kalkulacije cijena, unos jediničnih cijena u troškovnik, analiza troškova), priprema jamstva za ozbiljnost ponude, komunikacija s nadležnim institucijama vezano uz jamstvo za ozbiljnost ponude (banka, javni bilježnik i sl.), komunikacija s Naručiteljem tijekom roka za dostavu ponuda (izrada i slanje upita za pojašnjenjem ili izmjenom dokumentacije o nabavi i sl.), dostava ponude i njezinih dijelova, izmjena ponude u roku za dostavu ponuda, odustajanje od ponude u roku za dostavu ponuda, komunikacija s Naručiteljem tijekom pregleda i ocjene ponuda (izrada i slanje pojašnjenja, dopuna, ispravka računske pogreške i sl.), izrada i slanje ažuriranih popratnih dokumenata",
+      "žalbeni postupak: uvid i detaljna analiza ostalih ponuda, izrada i slanje žalbe, komunikacija s Državnom komisijom za kontrolu postupaka javne nabave (izrada i slanje očitovanja)"
     ]
   },
   {
