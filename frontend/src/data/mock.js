@@ -117,14 +117,20 @@ export const services = [
 export const specialOffers = [
   {
     id: 2,
-    title: "Građevinski paket",
+    title: "Građevinski inženjering PREMIUM",
     description: "Sve što trebate za vaš građevinski projekt pod jednim krovom.",
     price: "Cijena na upit",
     features: [
-      "Projektiranje",
-      "Građevinska dozvola",
-      "Pomoć pri nadzoru radova",
-      "Tehnički pregled"
+      "prijava gradilišta",
+      "izrada plana izvođenja radova",
+      "izrada akta o imenovanju glavnog inženjera gradilišta, inženjera gradilišta i voditelja radova",
+      "priprema dokumentacije koja se sukladno Zakonu o gradnji mora nalaziti na gradilištu",
+      "vođenje građevinskog dnevnika",
+      "izrada dokaznica mjera s pripadajućim obračunskim nacrtima",
+      "izrada građevinske knjige",
+      "sastavljanje računa, privremenih i okončanih situacija",
+      "izrada i priprema dokumentacije za obavljanje tehničkog pregleda i izdavanje uporabne dozvole",
+      "izrada i sastavljanje pisane izjave izvođača o izvedenim radovima"
     ]
   },
   {
