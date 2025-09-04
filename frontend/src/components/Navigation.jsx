@@ -128,7 +128,7 @@ const Navigation = () => {
               </SheetTrigger>
               <SheetContent side="right" className="w-72 sm:w-80">
                 <div className="flex flex-col space-y-1 mt-6">
-                  {navigationItems.map((item, index) => (
+                  {allNavigationItems.map((item, index) => (
                     <Link key={item.href} to={item.href} onClick={() => setIsOpen(false)}>
                       <Button
                         variant={location.pathname === item.href ? "default" : "ghost"}
