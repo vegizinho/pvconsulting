@@ -306,6 +306,7 @@ const Contact = () => {
                         <h3 className="font-semibold mb-1" style={{ color: '#122a3a' }}>Podaci o tvrtki</h3>
                         <p className="text-sm sm:text-base" style={{ color: '#4c555c' }}>{companyInfo.legalName}</p>
                         <p className="text-xs sm:text-sm mt-1" style={{ color: '#8093a0' }}>OIB: {companyInfo.oib}</p>
+                        <p className="text-xs sm:text-sm mt-1" style={{ color: '#8093a0' }}>Pavica Vlahović, ing.građ.</p>
                       </div>
                     </div>
                   </CardContent>
