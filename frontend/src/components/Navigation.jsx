@@ -31,59 +31,24 @@ const Navigation = () => {
             </div>
           </Link>
 
-          {/* Desktop Navigation - Full names multi-row layout */}
+          {/* Desktop Navigation - Clean 3-row layout */}
           <div className="hidden lg:block">
             <div className="flex flex-col space-y-1">
-              {/* First row - First 6 items including home */}
-              <div className="flex items-center space-x-1 flex-wrap justify-center">
-                {allNavigationItems.slice(0, 6).map((item, index) => (
+              {/* First row - Home + First 3 services */}
+              <div className="flex items-center justify-center space-x-2">
+                {allNavigationItems.slice(0, 4).map((item, index) => (
                   <Link key={item.href} to={item.href}>
                     <Button
                       variant={location.pathname === item.href ? "default" : "ghost"}
                       size="sm"
-                      className={`text-xs font-medium px-2 py-1 h-7 whitespace-nowrap ${
+                      className={`text-xs font-medium px-3 py-1 h-8 whitespace-nowrap transition-all ${
                         location.pathname === item.href 
-                          ? "text-white" 
-                          : ""
+                          ? "text-white shadow-md" 
+                          : "hover:shadow-sm"
                       }`}
                       style={location.pathname === item.href 
-                        ? { backgroundColor: index < 3 ? '#44687a' : '#215354' }
-                        : { color: index < 3 ? '#44687a' : '#215354' }
-                      }
-                      onMouseEnter={(e) => {
-                        if (location.pathname !== item.href) {
-                          e.target.style.backgroundColor = index < 3 ? '#8093a0' : '#293042';
-                          e.target.style.color = 'white';
-                        }
-                      }}
-                      onMouseLeave={(e) => {
-                        if (location.pathname !== item.href) {
-                          e.target.style.backgroundColor = 'transparent';
-                          e.target.style.color = index < 3 ? '#44687a' : '#215354';
-                        }
-                      }}
-                    >
-                      {item.name}
-                    </Button>
-                  </Link>
-                ))}
-              </div>
-              
-              {/* Second row - Remaining items */}
-              <div className="flex items-center space-x-1 flex-wrap justify-center">
-                {allNavigationItems.slice(6).map((item, index) => (
-                  <Link key={item.href} to={item.href}>
-                    <Button
-                      variant={location.pathname === item.href ? "default" : "ghost"}
-                      size="sm"
-                      className={`text-xs font-medium px-2 py-1 h-7 whitespace-nowrap ${
-                        location.pathname === item.href 
-                          ? "text-white" 
-                          : ""
-                      }`}
-                      style={location.pathname === item.href 
-                        ? { backgroundColor: index < 3 ? '#202c52' : '#293042' }
-                        : { color: index < 3 ? '#202c52' : '#293042' }
+                        ? { backgroundColor: '#44687a' }
+                        : { color: '#44687a' }
                       }
                       onMouseEnter={(e) => {
                         if (location.pathname !== item.href) {
@@ -94,7 +59,77 @@ const Navigation = () => {
                       onMouseLeave={(e) => {
                         if (location.pathname !== item.href) {
                           e.target.style.backgroundColor = 'transparent';
-                          e.target.style.color = index < 3 ? '#202c52' : '#293042';
+                          e.target.style.color = '#44687a';
+                        }
+                      }}
+                    >
+                      {item.name}
+                    </Button>
+                  </Link>
+                ))}
+              </div>
+              
+              {/* Second row - Next 4 services */}
+              <div className="flex items-center justify-center space-x-2">
+                {allNavigationItems.slice(4, 8).map((item, index) => (
+                  <Link key={item.href} to={item.href}>
+                    <Button
+                      variant={location.pathname === item.href ? "default" : "ghost"}
+                      size="sm"
+                      className={`text-xs font-medium px-3 py-1 h-8 whitespace-nowrap transition-all ${
+                        location.pathname === item.href 
+                          ? "text-white shadow-md" 
+                          : "hover:shadow-sm"
+                      }`}
+                      style={location.pathname === item.href 
+                        ? { backgroundColor: '#215354' }
+                        : { color: '#215354' }
+                      }
+                      onMouseEnter={(e) => {
+                        if (location.pathname !== item.href) {
+                          e.target.style.backgroundColor = '#293042';
+                          e.target.style.color = 'white';
+                        }
+                      }}
+                      onMouseLeave={(e) => {
+                        if (location.pathname !== item.href) {
+                          e.target.style.backgroundColor = 'transparent';
+                          e.target.style.color = '#215354';
+                        }
+                      }}
+                    >
+                      {item.name}
+                    </Button>
+                  </Link>
+                ))}
+              </div>
+              
+              {/* Third row - Last 3 items */}
+              <div className="flex items-center justify-center space-x-2">
+                {allNavigationItems.slice(8).map((item, index) => (
+                  <Link key={item.href} to={item.href}>
+                    <Button
+                      variant={location.pathname === item.href ? "default" : "ghost"}
+                      size="sm"
+                      className={`text-xs font-medium px-3 py-1 h-8 whitespace-nowrap transition-all ${
+                        location.pathname === item.href 
+                          ? "text-white shadow-md" 
+                          : "hover:shadow-sm"
+                      }`}
+                      style={location.pathname === item.href 
+                        ? { backgroundColor: '#202c52' }
+                        : { color: '#202c52' }
+                      }
+                      onMouseEnter={(e) => {
+                        if (location.pathname !== item.href) {
+                          e.target.style.backgroundColor = '#8093a0';
+                          e.target.style.color = 'white';
+                        }
+                      }}
+                      onMouseLeave={(e) => {
+                        if (location.pathname !== item.href) {
+                          e.target.style.backgroundColor = 'transparent';
+                          e.target.style.color = '#202c52';
                         }
                       }}
                     >
