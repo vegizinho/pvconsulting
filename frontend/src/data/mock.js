@@ -79,7 +79,7 @@ export const services = [
   {
     id: "knjigovodstvene-usluge",
     title: "Knjigovodstvene usluge",
-    description: "profesionalne knjigovodstvene usluge za mikro i mala poduzeća, obrte",
+    description: "Profesionalne knjigovodstvene usluge za mikro i mala poduzeća, obrte",
     icon: "Calculator",
     features: [
       "Vođenje poslovnih knjiga",
