@@ -135,14 +135,17 @@ export const specialOffers = [
   },
   {
     id: 3,
-    title: "Javna nabava Premium",
+    title: "Javna nabava za ponuditelje PREMIUM",
     description: "VIP usluga za složene postupke javne nabave.",
     price: "Individualna ponuda",
     features: [
-      "Analiza tržišta",
-      "Strategija nadmetanja",
-      "Priprema dokumentacije",
-      "Cjelovita podrška"
+      "analiza objavljene dokumentacije o nabavi",
+      "izrada ponude",
+      "izrada troškovnika (analiza tržišta, slanje upita dobavljačima, komunikacija s dobavljačima, analiza dostavljenih ponuda dobavljača, analize i kalkulacije cijena, unos jediničnih cijena u troškovnik, analiza troškova)",
+      "priprema jamstva za ozbiljnost ponude",
+      "komunikacija s Naručiteljem tijekom roka za dostavu ponuda ((izrada i slanje upita za pojašnjenjem ili izmjenom dokumentacije o nabavi)",
+      "dostava ponude i njezinih dijelova",
+      "komunikacija s Naručiteljem tijekom pregleda i ocjene ponuda (izrada i slanje pojašnjenja, dopuna, ispravka računske pogreške i sl., izrada i slanje ažuriranih popratnih dokumenata)"
     ]
   }
 ];
