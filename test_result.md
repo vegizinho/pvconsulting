@@ -186,4 +186,17 @@ agent_communication:
     message: "Successfully implemented all pending tasks: 1) Changed 'Konzultacija' to 'Konultacije' throughout the site, 2) Updated service description, 3) Ensured phone number consistency (+385 98 9417 413), 4) Added scroll-to-top functionality for footer links, 5) Verified items in Građevinski inženjering service are already correctly ordered. New tasks completed: 6) Removed 'Uvjeti plaćanja' and 'Prekidanje usluga' sections from Terms of Service page, 7) Updated service description text in Terms of Service. All functionality verified through screenshots."
 
   - agent: "main"
-    message: "Updated Terms of Service page: 1) Completely removed 'Uvjeti plaćanja' (Payment Terms) section, 2) Completely removed 'Prekidanje usluga' (Service Termination) section, 3) Changed 'Građevinski inženjering i projektiranje' to 'Građevinski inženjering i pomoć pri projektiranju' in the service description section. Changes verified through screenshots."
+    message: "Updated Terms of Service page: 1) Completely removed 'Uvjeti plaćanja' (Payment Terms) section, 2) Completely removed 'Prekidanje usluga' (Service Termination) section, 3) Changed 'Građevinski inženjering i projektiranje' to 'Građevinski inženjering i pomoć pri projektiranju' in the service description section. Updated navigation menu: 4) Changed all navigation items to full names without abbreviation, 5) Reworked navigation layout to accommodate longer menu titles in 2-row desktop layout. Changes verified through screenshots."
+
+frontend:
+  - task: "Update navigation menu with full names"
+    implemented: true
+    working: true
+    file: "mock.js and Navigation.jsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "Updated navigationItems in mock.js with full names and completely reworked Navigation.jsx to display all full names in 2-row layout without abbreviation"
