@@ -31,53 +31,59 @@ const Navigation = () => {
             </div>
           </Link>
 
-          {/* Desktop Navigation - Compact 2-row layout */}
-          <div className="hidden xl:block">
+          {/* Desktop Navigation - Full names multi-row layout */}
+          <div className="hidden lg:block">
             <div className="flex flex-col space-y-1">
-              {/* First row - Main pages */}
-              <div className="flex items-center space-x-1">
-                <Link to="/">
-                  <Button
-                    variant={location.pathname === "/" ? "default" : "ghost"}
-                    size="sm"
-                    className={`text-xs font-medium px-2 py-1 h-7 ${
-                      location.pathname === "/" 
-                        ? "text-white" 
-                        : ""
-                    }`}
-                    style={location.pathname === "/" 
-                      ? { backgroundColor: '#44687a' }
-                      : { color: '#44687a' }
-                    }
-                    onMouseEnter={(e) => {
-                      if (location.pathname !== "/") {
-                        e.target.style.backgroundColor = '#8093a0';
-                        e.target.style.color = 'white';
-                      }
-                    }}
-                    onMouseLeave={(e) => {
-                      if (location.pathname !== "/") {
-                        e.target.style.backgroundColor = 'transparent';
-                        e.target.style.color = '#44687a';
-                      }
-                    }}
-                  >
-                    Početna
-                  </Button>
-                </Link>
-                {mainServices.map((item) => (
+              {/* First row - First 6 items including home */}
+              <div className="flex items-center space-x-1 flex-wrap justify-center">
+                {allNavigationItems.slice(0, 6).map((item, index) => (
                   <Link key={item.href} to={item.href}>
                     <Button
                       variant={location.pathname === item.href ? "default" : "ghost"}
                       size="sm"
-                      className={`text-xs font-medium px-2 py-1 h-7 ${
+                      className={`text-xs font-medium px-2 py-1 h-7 whitespace-nowrap ${
                         location.pathname === item.href 
                           ? "text-white" 
                           : ""
                       }`}
                       style={location.pathname === item.href 
-                        ? { backgroundColor: '#44687a' }
-                        : { color: '#44687a' }
+                        ? { backgroundColor: index < 3 ? '#44687a' : '#215354' }
+                        : { color: index < 3 ? '#44687a' : '#215354' }
+                      }
+                      onMouseEnter={(e) => {
+                        if (location.pathname !== item.href) {
+                          e.target.style.backgroundColor = index < 3 ? '#8093a0' : '#293042';
+                          e.target.style.color = 'white';
+                        }
+                      }}
+                      onMouseLeave={(e) => {
+                        if (location.pathname !== item.href) {
+                          e.target.style.backgroundColor = 'transparent';
+                          e.target.style.color = index < 3 ? '#44687a' : '#215354';
+                        }
+                      }}
+                    >
+                      {item.name}
+                    </Button>
+                  </Link>
+                ))}
+              </div>
+              
+              {/* Second row - Remaining items */}
+              <div className="flex items-center space-x-1 flex-wrap justify-center">
+                {allNavigationItems.slice(6).map((item, index) => (
+                  <Link key={item.href} to={item.href}>
+                    <Button
+                      variant={location.pathname === item.href ? "default" : "ghost"}
+                      size="sm"
+                      className={`text-xs font-medium px-2 py-1 h-7 whitespace-nowrap ${
+                        location.pathname === item.href 
+                          ? "text-white" 
+                          : ""
+                      }`}
+                      style={location.pathname === item.href 
+                        ? { backgroundColor: index < 3 ? '#202c52' : '#293042' }
+                        : { color: index < 3 ? '#202c52' : '#293042' }
                       }
                       onMouseEnter={(e) => {
                         if (location.pathname !== item.href) {
@@ -88,73 +94,7 @@ const Navigation = () => {
                       onMouseLeave={(e) => {
                         if (location.pathname !== item.href) {
                           e.target.style.backgroundColor = 'transparent';
-                          e.target.style.color = '#44687a';
-                        }
-                      }}
-                    >
-                      {item.name.split(' ').slice(0, 2).join(' ')}
-                    </Button>
-                  </Link>
-                ))}
-              </div>
-              
-              {/* Second row - Secondary services and other pages */}
-              <div className="flex items-center space-x-1">
-                {secondaryServices.map((item) => (
-                  <Link key={item.href} to={item.href}>
-                    <Button
-                      variant={location.pathname === item.href ? "default" : "ghost"}
-                      size="sm"
-                      className={`text-xs font-medium px-2 py-1 h-7 ${
-                        location.pathname === item.href 
-                          ? "text-white" 
-                          : ""
-                      }`}
-                      style={location.pathname === item.href 
-                        ? { backgroundColor: '#215354' }
-                        : { color: '#215354' }
-                      }
-                      onMouseEnter={(e) => {
-                        if (location.pathname !== item.href) {
-                          e.target.style.backgroundColor = '#293042';
-                          e.target.style.color = 'white';
-                        }
-                      }}
-                      onMouseLeave={(e) => {
-                        if (location.pathname !== item.href) {
-                          e.target.style.backgroundColor = 'transparent';
-                          e.target.style.color = '#215354';
-                        }
-                      }}
-                    >
-                      {item.name.split(' ').slice(0, 2).join(' ')}
-                    </Button>
-                  </Link>
-                ))}
-                {otherPages.map((item) => (
-                  <Link key={item.href} to={item.href}>
-                    <Button
-                      variant={location.pathname === item.href ? "default" : "ghost"}
-                      size="sm"
-                      className={`text-xs font-medium px-2 py-1 h-7 ${
-                        location.pathname === item.href 
-                          ? "text-white" 
-                          : ""
-                      }`}
-                      style={location.pathname === item.href 
-                        ? { backgroundColor: '#202c52' }
-                        : { color: '#202c52' }
-                      }
-                      onMouseEnter={(e) => {
-                        if (location.pathname !== item.href) {
-                          e.target.style.backgroundColor = '#293042';
-                          e.target.style.color = 'white';
-                        }
-                      }}
-                      onMouseLeave={(e) => {
-                        if (location.pathname !== item.href) {
-                          e.target.style.backgroundColor = 'transparent';
-                          e.target.style.color = '#202c52';
+                          e.target.style.color = index < 3 ? '#202c52' : '#293042';
                         }
                       }}
                     >
@@ -164,63 +104,6 @@ const Navigation = () => {
                 ))}
               </div>
             </div>
-          </div>
-
-          {/* Large screens single row with abbreviated text */}
-          <div className="hidden lg:flex xl:hidden items-center space-x-1">
-            <Link to="/">
-              <Button
-                variant={location.pathname === "/" ? "default" : "ghost"}
-                size="sm"
-                className={`text-xs font-medium px-2 py-1 ${
-                  location.pathname === "/" 
-                    ? "text-white" 
-                    : ""
-                }`}
-                style={location.pathname === "/" 
-                  ? { backgroundColor: '#44687a' }
-                  : { color: '#44687a' }
-                }
-              >
-                Početna
-              </Button>
-            </Link>
-            {navigationItems.slice(1, 8).map((item, index) => (
-              <Link key={item.href} to={item.href}>
-                <Button
-                  variant={location.pathname === item.href ? "default" : "ghost"}
-                  size="sm"
-                  className={`text-xs font-medium px-1.5 py-1 ${
-                    location.pathname === item.href 
-                      ? "text-white" 
-                      : ""
-                  }`}
-                  style={location.pathname === item.href 
-                    ? { backgroundColor: index < 4 ? '#44687a' : '#215354' }
-                    : { color: index < 4 ? '#44687a' : '#215354' }
-                  }
-                >
-                  {item.name.split(' ')[0]}
-                </Button>
-              </Link>
-            ))}
-            <Link to="/kontakt">
-              <Button
-                variant={location.pathname === "/kontakt" ? "default" : "ghost"}
-                size="sm"
-                className={`text-xs font-medium px-2 py-1 ${
-                  location.pathname === "/kontakt" 
-                    ? "text-white" 
-                    : ""
-                }`}
-                style={location.pathname === "/kontakt" 
-                  ? { backgroundColor: '#202c52' }
-                  : { color: '#202c52' }
-                }
-              >
-                Kontakt
-              </Button>
-            </Link>
           </div>
 
           {/* Contact Info & Mobile Menu */}
