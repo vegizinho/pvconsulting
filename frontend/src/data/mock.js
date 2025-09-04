@@ -35,7 +35,7 @@ export const services = [
   {
     id: "usluge-projektiranja",
     title: "Pomoć u projektiranju",
-    description: "Usluge pomoći u projektiranju od idejnih do izvedbenih projakata",
+    description: "Usluge pomoći u projektirању od idejnih do izvedbenih projekata",
     icon: "PenTool",
     features: [
       "Idejni projekti",
