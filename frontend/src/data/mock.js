@@ -102,10 +102,12 @@ export const services = [
     description: "Širok spektar dodatnih usluga za potpunu podršku vašem poslovanju.",
     icon: "Settings",
     features: [
-      "Geodetska djelatnost",
-      "Savjetovanje u poslovanju",
-      "Istraživanje tržišta",
-      "Organiziranje događanja"
+      "tehničko savjetovanje",
+      "uredske administrativne djelatnosti",
+      "obrazovanje i poučavanje u području javne nabave",
+      "održavanje seminara i edukacija iz područja javne nabave",
+      "savjetovanje u vezi s poslovanjem i ostalim upravljanjem",
+      "geodetske i geoinformatičke djelatnosti"
     ]
   }
 ];
