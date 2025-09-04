@@ -93,7 +93,7 @@ const Home = () => {
                   {companyInfo.tagline}
                 </p>
                 <p className="text-base sm:text-lg leading-relaxed" style={{ color: '#4c555c' }}>
-                  Pružamo stručne usluge građevinskog inženjeringa, javne nabave, projektiranja i poslovnog savjetovanja u {companyInfo.location}.
+                  Pružamo stručne usluge građevinskog inženjeringa, javne nabave i poslovnog savjetovanja u {companyInfo.location}.
                 </p>
               </div>
 
