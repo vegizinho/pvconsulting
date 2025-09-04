@@ -27,7 +27,9 @@ export const services = [
       "izrada dokaznica mjera s pripadajućim obračunskim nacrtima",
       "izrada građevinskih knjiga",
       "sastavljanje računa, privremenih i okončanih situacija",
-      "izrada i priprema dokumentacije za obavljanje tehničkog pregleda i izdavanje uporabne dozvole"
+      "izrada i priprema dokumentacije za obavljanje tehničkog pregleda i izdavanje uporabne dozvole",
+      "izrada i sastavljanje pisanih izjava izvođača o izvedenim radovima",
+      "usluge vođenja gradnje"
     ]
   },
   {
