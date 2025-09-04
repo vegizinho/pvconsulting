@@ -38,10 +38,8 @@ export const services = [
     description: "Usluge pomoći u projektirању od idejnih do izvedbenih projekata",
     icon: "PenTool",
     features: [
-      "Idejni projekti",
-      "Glavni projekti",
-      "Izvedbeni projekti",
-      "Revizije projekata"
+      "Tehnička podrška izvođačima, projektantskim i arhitektonskim uredima:",
+      "suradnja u izradi elaborata, idejnog, glavnog, izvedbenog i tipskog projekta, projekta uklanjanja i projekta postojećeg stanja građevine"
     ]
   },
   {
