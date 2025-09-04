@@ -43,7 +43,7 @@ export const services = [
   {
     id: "javna-nabava-ponuditelji",
     title: "Javna nabava za Ponuditelje",
-    description: "izrada ponuda, stručna pomoć Ponuditeljima u postupcima javne nabave",
+    description: "Izrada ponuda, stručna pomoć Ponuditeljima u postupcima javne nabave",
     icon: "FileText",
     features: [
       "Priprema ponuda",
