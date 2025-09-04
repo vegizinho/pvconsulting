@@ -19,13 +19,15 @@ export const services = [
     description: "Izrada građevinske knjige, troškovnika i vođenje gradilišta.",
     icon: "Building2",
     features: [
-      "Izrada građevinske knjige",
-      "Izrada troškovnika", 
-      "Vođenje gradilišta",
-      "Projektiranje stambenih i poslovnih objekata",
-      "Statički proračuni konstrukcija",
-      "Pomoć pri nadzoru izvođenja radova",
-      "Tehnički pregledi"
+      "prijave gradilišta tijelu nadležnom za poslove inspekcije rada",
+      "izrada planova izvođenja radova",
+      "izrada akata o imenovanju glavnog inženjera gradilišta, inženjera gradilišta i voditelja radova",
+      "priprema dokumentacije koja se sukladno Zakonu o gradnji mora nalaziti na gradilištu",
+      "vođenje građevinskog dnevnika",
+      "izrada dokaznica mjera s pripadajućim obračunskim nacrtima",
+      "izrada građevinskih knjiga",
+      "sastavljanje računa, privremenih i okončanih situacija",
+      "izrada i priprema dokumentacije za obavljanje tehničkog pregleda i izdavanje uporabne dozvole"
     ]
   },
   {
