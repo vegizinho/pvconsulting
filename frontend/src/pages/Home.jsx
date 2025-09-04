@@ -104,7 +104,7 @@ const Home = () => {
                     className="text-white group w-full sm:w-auto hover:opacity-90 transition-opacity"
                     style={{ backgroundColor: '#44687a' }}
                   >
-                    Besplatne konultacije
+                    Besplatne konzultacije
                     <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </Link>
