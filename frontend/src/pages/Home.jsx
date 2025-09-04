@@ -195,7 +195,7 @@ const Home = () => {
             <div className="grid grid-cols-2 gap-3 sm:gap-4">
               <Card className="text-center p-4 sm:p-6">
                 <Users className="w-10 h-10 sm:w-12 sm:h-12 mx-auto mb-3" style={{ color: '#44687a' }} />
-                <div className="text-xl sm:text-2xl font-bold mb-1" style={{ color: '#122a3a' }}>100+</div>
+                <div className="text-xl sm:text-2xl font-bold mb-1" style={{ color: '#122a3a' }}>20+</div>
                 <div className="text-xs sm:text-sm" style={{ color: '#4c555c' }}>Zadovoljnih klijenata</div>
               </Card>
               <Card className="text-center p-4 sm:p-6">
