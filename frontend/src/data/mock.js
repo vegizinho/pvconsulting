@@ -70,10 +70,8 @@ export const services = [
     description: "Usluge Koordinatora za zaštitu na radu u fazi projektiranja i tijekom izvođenja radova",
     icon: "Shield",
     features: [
-      "Procjena rizika",
-      "Obuka zaposlenika",
-      "Planovi zaštite",
-      "Redoviti pomoć pri nadzoru"
+      "poslovi Koordinatora zaštite na radu tijekom izrade projekta (Koordinator I): koordiniranje primjene općih načela zaštite na radu i pravila zaštite na radu tijekom projektiranja, izrada plana izvođenja radova prema provedbenom propisu, uzimajući u obzir pravila primjenjiva na pojedinom radilištu, vodeći računa o svim aktivnostima koje se obavljaju na radilištu, koji mora sadržavati i posebne mjere ako su poslovi na radilištu opasni radovi prema provedbenom propisu",
+      "poslovi Koordinatora za zaštitu na radu tijekom građenja (Koordinator II): koordiniranje primjene općih načela zaštite na radu kod donošenja odluka o rokovima i bitnim mjerama tijekom planiranja i izvođenja pojedinih faza rada, koje se izvode istodobno ili u slijedu, koordiniranje izvođenja odgovarajućih postupaka kako bi se osiguralo da poslodavci i druge osobe dosljedno primjenjuju opća načela zaštite na radu i izvode radove u skladu s planom izvođenja radova, izrada potrebnih usklađenja plana izvođenja radova i dokumentacije sa svim promjenama na gradilištu, osiguranje suradnje i uzajamnog obavješćivanja svih izvođača radova i njihovih radničkih predstavnika, provjeravanje provode li se radni postupci na siguran način i usklađivanje propisanih aktivnosti, organiziranje da na gradilište ima"
     ]
   },
   {
