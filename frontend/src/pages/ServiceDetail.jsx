@@ -216,7 +216,7 @@ const ServiceDetail = () => {
                         <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center mx-auto mb-3" style={{ backgroundColor: '#44687a20' }}>
                           <span className="font-bold text-base sm:text-lg" style={{ color: '#44687a' }}>1</span>
                         </div>
-                        <h4 className="font-semibold mb-2 text-sm sm:text-base" style={{ color: '#122a3a' }}>Konultacije</h4>
+                        <h4 className="font-semibold mb-2 text-sm sm:text-base" style={{ color: '#122a3a' }}>Konzultacije</h4>
                         <p className="text-xs sm:text-sm" style={{ color: '#4c555c' }}>Analiza vaših potreba i definiranje opsega rada</p>
                       </div>
                       <div className="text-center">
