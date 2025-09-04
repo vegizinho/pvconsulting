@@ -142,7 +142,7 @@ const Navigation = () => {
           </div>
 
           {/* Contact Info & Mobile Menu */}
-          <div className="flex items-center space-x-2 sm:space-x-4">
+          <div className="flex items-center space-x-2 sm:space-x-4 lg:pt-2">
             <div className="hidden 2xl:flex items-center space-x-3 text-xs">
               <div className="flex items-center space-x-1" style={{ color: '#4c555c' }}>
                 <Phone className="w-3 h-3" />
